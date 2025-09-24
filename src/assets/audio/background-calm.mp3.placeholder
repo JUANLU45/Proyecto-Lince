@@ -1,0 +1,48 @@
+# Background Calm Audio - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - TECHNOLOGY.md línea 841: require('../../assets/audio/background-calm.mp3')
+# - APP_BLUEPRINT.md línea 135: "Rincón de Calma (autorregulación)"
+# - APP_BLUEPRINT.md línea 137: "Respiración guiada con Leo"
+# - Actividades relajación y autorregulación emocional
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: MP3 optimized para mobile (128kbps)
+# - Duración: Loop 3-5 minutos seamless
+# - Frecuencia: 44.1kHz sample rate
+# - Canales: Stereo para experiencia inmersiva suave
+# - Volumen: Normalizado -18dB para consistencia
+#
+# INTEGRACIÓN CON COMPONENTES:
+# - RinconCalma.tsx: Audio background automático
+# - ActividadRelajacion.tsx: Música acompañamiento respiración
+# - Audio system service: Auto-loop background calm
+# - Volume controls: Ajustable desde configuración
+#
+# CASOS USO ESPECÍFICOS:
+# - Pantalla 10 APP_BLUEPRINT.md: "Rincón de Calma"
+# - Respiración guiada Leo: Audio sincronizado con animación
+# - Momentos autorregulación emocional
+# - Transiciones entre actividades intensas
+# - Auto-pause activities: Audio calm mientras paused
+#
+# TERAPÉUTICO NIÑOS SÍNDROME DOWN:
+# - Frecuencias relajantes sin ser somníferas
+# - Sonidos naturaleza suaves (agua, viento, pájaros)
+# - Sin cambios bruscos que generen ansiedad
+# - Tempo lento que facilite regulación emocional
+# - Compatible con ejercicios respiración profunda
+#
+# ACCESIBILIDAD AUDITIVA:
+# - No interferir con VoiceOver/TalkBack
+# - Volumen controlable independiente
+# - Fade in/out suave para no sobresaltar
+# - Stop inmediato si actividad requiere audio focus
+#
+# CARACTERÍSTICAS LOOP:
+# - Seamless loop sin cortes detectables
+# - Inicio/fin diseñado para continuidad infinita
+# - No melodías repetitivas que cansen
+# - Ambiente constante que facilite concentración
+#
+# NOTA: Placeholder para audio calm real composición específica

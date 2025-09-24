@@ -1,0 +1,38 @@
+# Play Button Icon - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - TECHNOLOGY.md línea 835: require('../../assets/icons/play-button.png')
+# - APP_BLUEPRINT.md línea 67: "Imagen/video preview de la actividad"
+# - UI_COMPONENTS.md línea 174: "Icono de trofeo + animación de confeti"
+# - Botones multimedia para actividades audio/video
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: PNG con transparencia alpha channel
+# - Resolución: 128x128px (icono estándar) escalable
+# - Estilo: Icono play universal (triángulo derecha) pero themed Leo
+# - Estados: Normal, pressed, disabled para feedback táctil
+#
+# INTEGRACIÓN CON COMPONENTES:
+# - BotonPrimario.tsx: Icono play para inicio actividades
+# - ActividadContainer.tsx: Botón iniciar/continuar actividad
+# - Audio/Video controls: Reproducir contenido multimedia
+# - Preview actividades: Botón demostración antes de empezar
+#
+# CASOS USO ESPECÍFICOS:
+# - Pantalla 6 APP_BLUEPRINT.md: Botón "Empezar Actividad"
+# - Actividades audio: Reproducir sonidos de ejemplo
+# - Video demos: Leo demostrando actividad
+# - Feedback audio: Reproducir sonidos éxito/aliento
+#
+# ACCESIBILIDAD REQUERIDA:
+# - Tamaño mínimo 44px para touch (escalable desde 128px base)
+# - Contraste alto para visibilidad
+# - Compatible con VoiceOver/TalkBack
+# - Feedback háptico en interacción
+#
+# PALETA COLORES (DESIGN_SYSTEM.md):
+# - Color base: azulPulsante o verdeJungla
+# - Estados: hover/pressed con variations
+# - Disabled: grisAdministrativo
+#
+# NOTA: Placeholder para icono play real themed proyecto

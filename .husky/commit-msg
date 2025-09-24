@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# PROYECTO LINCE - COMMIT-MSG HOOK
+# VERIFICACIÓN DEL FORMATO DE MENSAJES DE COMMIT
+
+echo "💬 Verificando formato del mensaje de commit..."
+
+# LEER EL MENSAJE DE COMMIT
+commit_regex='^(feat|fix|docs|style|refactor|test|chore|perf|build|ci)(\(.+\))?: .{1,50}'
+
+# VERIFICAR EL FORMATO
+if ! grep -qE "$commit_regex" "$1"; then
+  echo "❌ Formato de commit inválido."
+  echo ""
+  echo "El mensaje debe seguir el formato:"
+  echo "tipo(scope): descripción"
+  echo ""
+  echo "Tipos permitidos:"
+  echo "  feat:     Nueva funcionalidad"
+  echo "  fix:      Corrección de bug"
+  echo "  docs:     Cambios en documentación"
+  echo "  style:    Cambios de formato (no afectan funcionalidad)"
+  echo "  refactor: Refactoring de código"
+  echo "  test:     Agregar o modificar tests"
+  echo "  chore:    Tareas de mantenimiento"
+  echo "  perf:     Mejoras de performance"
+  echo "  build:    Cambios en build system"
+  echo "  ci:       Cambios en CI/CD"
+  echo ""
+  echo "Ejemplos válidos:"
+  echo "  feat(auth): agregar login con Firebase"
+  echo "  fix(ui): corregir layout en pantalla principal"
+  echo "  docs: actualizar README con instrucciones"
+  echo "  test(utils): agregar tests para validation"
+  echo ""
+  exit 1
+fi
+
+echo "✅ Formato de mensaje de commit válido."

@@ -64,11 +64,12 @@
 
 ### Frontend
 ```
-React Native 0.72+
-Expo SDK 49+
-TypeScript 5+
-Zustand (Estado)
-React Navigation 6
+React Native 0.72.15
+Expo SDK 54.0.10
+React 18.2.0
+TypeScript 5.6.3
+Zustand 4.4.1 (Estado)
+React Navigation 6.1.9
 ```
 
 ### Backend & IA

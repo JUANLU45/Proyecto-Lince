@@ -1,0 +1,64 @@
+# Error Gentle Sound - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - TECHNOLOGY.md línea 847: require('../../assets/audio/error-gentle.wav')
+# - APP_BLUEPRINT.md línea 265: "Celebrar intentos, no solo éxitos"
+# - FeedbackVisual.tsx: Tipo 'intento' implementado siempre positivo
+# - Error handling pero sin generar frustración
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: WAV uncompressed para calidad feedback
+# - Duración: 1-2 segundos suave, no abrupto
+# - Frecuencia: 44.1kHz sample rate
+# - Canales: Stereo para experiencia envolvente suave
+# - Volumen: Normalizado -20dB más suave que success
+#
+# INTEGRACIÓN CON COMPONENTES:
+# - FeedbackVisual.tsx: Audio para tipo 'intento' refuerzo positivo
+# - AreaInteractiva.tsx: Audio cuando interacción no esperada
+# - Error boundaries: Audio amigable cuando error técnico
+# - Validation feedback: Audio suave para inputs incorrectos
+#
+# CASOS USO ESPECÍFICOS:
+# - Intento actividad no completamente correcto PERO SIEMPRE POSITIVO
+# - Interacción AreaInteractiva fuera target pero celebrando intento
+# - Error técnico con recovery path audio amigable
+# - Feedback alentador "casi lo tienes, sigue intentando"
+# - Redirection suave sin frustración
+#
+# TERAPÉUTICO NIÑOS SÍNDROME DOWN:
+# - CRUCIAL: NO sonido negativo, siempre alentador
+# - Timbre que sugiere "vamos a intentarlo otra vez"
+# - Melodía descendente SUAVE, no dramática
+# - Frecuencias cálidas que mantengan engagement
+# - Duración que permita procesamiento sin prisa
+#
+# ACCESIBILIDAD AUDITIVA:
+# - Volumen menor que success para diferenciación sutil
+# - Timbre claramente distinguible sin ser punitivo
+# - Compatible con procesamiento auditivo lento
+# - Clear message: "es normal intentar varias veces"
+# - No generar ansiedad auditiva
+#
+# CARACTERÍSTICAS PSICOLÓGICAS CRÍTICAS:
+# - NUNCA punitivo, siempre constructivo
+# - Refuerzo positivo del intento mismo
+# - Sonido que invite a continuar, no abandonar
+# - Timbre paternal/maternal protectivo
+# - Building resilience through positive error experience
+#
+# FILOSOFÍA PROYECTO LINCE:
+# - "Celebrar intentos, no solo éxitos" línea 265
+# - Error como parte natural del aprendizaje
+# - Sonido que comunica "Leo está orgulloso del intento"
+# - Mantener autoestima alta durante proceso
+# - Diferente de success pero igualmente positivo
+#
+# COORDINACIÓN EMOCIONAL:
+# - Trigger con animación Leo alentadora
+# - Compatible con vibración háptica suave
+# - Timing que permita procesamiento emocional
+# - No seguido inmediatamente de otro feedback
+# - Pausa para asimilar y reintento voluntario
+#
+# NOTA: Placeholder para gentle sound real diseño terapéutico específico

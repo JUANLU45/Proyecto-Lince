@@ -1,0 +1,31 @@
+# Movement Island Background - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - TECHNOLOGY.md línea 831: require('../../assets/backgrounds/movement-island.png')
+# - APP_BLUEPRINT.md línea 43: "🏃 Isla del Movimiento (actividades físicas)"
+# - APP_BLUEPRINT.md línea 75: "Los Saltos Fuertes de Leo"
+# - APP_BLUEPRINT.md línea 96: "Tocar para hacer saltar a Leo"
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: PNG optimized para fondos full-screen
+# - Resolución: 1920x1080px (16:9) escalable a múltiples ratios
+# - Estilo: Paisaje dinámico, colorido, espacios abiertos para movimiento
+# - Elementos: Plataformas salto, espacios físicos, ambiente energético
+#
+# INTEGRACIÓN CON COMPONENTES:
+# - IslaMovimiento.tsx: Background principal isla
+# - ActividadSaltos.tsx: Escenario "Los Saltos Fuertes de Leo"
+# - ActividadContainer.tsx: Fondo cuando actividad tipo 'movimiento'
+#
+# CASOS USO ESPECÍFICOS:
+# - Pantalla 5 APP_BLUEPRINT.md: Vista isla movimiento
+# - Actividades físicas: saltos, coordinación, motricidad gruesa
+# - Ambiente estimulante para niños con síndrome Down
+# - Background para avatares Leo en movimiento
+#
+# PALETA COLORES REQUERIDA (DESIGN_SYSTEM.md):
+# - Colores energéticos pero no saturantes
+# - Compatible con sistema colores centralizado
+# - Contraste adecuado para elementos UI superpuestos
+#
+# NOTA: Placeholder para ilustración real isla movimiento

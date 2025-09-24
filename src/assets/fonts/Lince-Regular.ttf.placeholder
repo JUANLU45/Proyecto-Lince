@@ -1,0 +1,69 @@
+# Lince-Regular Font - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - DESIGN_SYSTEM.md: Tipografía Body y BodySmall
+# - VERIFICATION_CHECKLIST.md: Accesibilidad WCAG AA
+# - UI_COMPONENTS.md: AvatarLeo y componentes texto
+# - PROJECT_REQUIREMENTS.md: RNF-003 accesibilidad texto
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: TTF para máxima compatibilidad React Native
+# - Peso: Regular (400) como base tipográfica
+# - Estilo: Sans-serif limpio, alta legibilidad
+# - Optimización: Pantallas móviles desde 14px
+# - Encoding: Unicode UTF-8 completo
+#
+# DISEÑO ESPECÍFICO SÍNDROME DOWN:
+# - Altura x elevada para mejor reconocimiento caracteres
+# - Contraformas amplias y claramente definidas
+# - Espaciado generoso entre caracteres (tracking)
+# - Diferenciación clara entre caracteres similares (b/d, p/q, 6/9)
+# - Sin serifas para simplicidad visual
+# - Peso consistente sin variaciones dramáticas
+#
+# INTEGRACIÓN DESIGN SYSTEM:
+# - Body: fontSize 16px, lineHeight 24px, fontWeight 400
+# - BodySmall: fontSize 14px, lineHeight 20px, fontWeight 400
+# - Caption: fontSize 12px, lineHeight 16px, fontWeight 400
+# - Uso en textos principales, instrucciones, contenido educativo
+#
+# CASOS USO ESPECÍFICOS:
+# - Instrucciones actividades (ActividadContainer.tsx)
+# - Mensajes feedback (FeedbackVisual.tsx)
+# - Texto UI crítico navegación
+# - Contenido educativo principal
+# - Portal padres: descripción textos
+#
+# ACCESIBILIDAD IMPLEMENTADA:
+# - WCAG 2.1 AA compliance para contraste cuando aplicado
+# - Soporte VoiceOver/TalkBack
+# - Escalado dinámico sistema (hasta 200%)
+# - Spacing optimizado eye tracking
+# - Character recognition optimizado procesamiento cognitivo
+#
+# PERFORMANCE OPTIMIZACIÓN:
+# - File size objetivo: <300KB
+# - Subset Latin básico + números + símbolos
+# - Hinting manual pantallas móviles
+# - Preload crítico App.tsx startup
+# - Fallback fonts definidos (system defaults)
+#
+# IMPLEMENTACIÓN TÉCNICA:
+# ```typescript
+# import * as Font from 'expo-font';
+# 
+# await Font.loadAsync({
+#   'Lince-Regular': require('./assets/fonts/Lince-Regular.ttf'),
+# });
+# 
+# // Usage en componentes:
+# fontFamily: 'Lince-Regular'
+# ```
+#
+# COMPATIBILIDAD:
+# - iOS 13+ optimized rendering
+# - Android 8+ (API 26+) full support
+# - Expo 54+ compatible
+# - React Native 0.72+ font loading
+#
+# NOTA: Placeholder para fuente real Lince-Regular custom diseñada

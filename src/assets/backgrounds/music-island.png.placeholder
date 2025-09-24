@@ -1,0 +1,32 @@
+# Music Island Background - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - TECHNOLOGY.md línea 832: require('../../assets/backgrounds/music-island.png')
+# - APP_BLUEPRINT.md línea 44: "🎵 Isla Musical (actividades auditivas)"
+# - APP_BLUEPRINT.md línea 198: "La Granja Sonora de Leo"
+# - APP_BLUEPRINT.md línea 201: "Leo aparece en un escenario de granja colorida"
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: PNG optimized para fondos full-screen
+# - Resolución: 1920x1080px (16:9) escalable a múltiples ratios
+# - Estilo: Escenario musical, instrumentos, ambiente sonoro visual
+# - Elementos: Granja colorida, instrumentos musicales, notas flotantes
+#
+# INTEGRACIÓN CON COMPONENTES:
+# - IslaMusical.tsx: Background principal isla musical
+# - ActividadGranjaSonora.tsx: Escenario "La Granja Sonora de Leo"
+# - ActividadContainer.tsx: Fondo cuando actividad tipo 'auditiva'
+# - Audio recording activities: Visual context para captura sonidos
+#
+# CASOS USO ESPECÍFICOS:
+# - Pantalla 13 APP_BLUEPRINT.md: Actividad "Imita el Sonido"
+# - Actividades auditivas: imitación sonidos, ritmos, música
+# - Escenario granja con animales para sonidos naturales
+# - Background para Leo demostrando sonidos animales
+#
+# PALETA COLORES REQUERIDA (DESIGN_SYSTEM.md):
+# - Colores musicales: verdes naturaleza, amarillos sol
+# - Compatible con sistema colores centralizado
+# - Contraste para elementos audio UI (botones rec/play)
+#
+# NOTA: Placeholder para ilustración real isla musical/granja

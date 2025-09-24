@@ -1,0 +1,58 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# PROYECTO LINCE - PRE-COMMIT HOOK
+# VERIFICACIÓN COMPLETA ANTES DE COMMIT
+
+echo "🔍 Ejecutando verificaciones pre-commit para Proyecto Lince..."
+
+# 1. VERIFICAR LINT
+echo "📋 Verificando ESLint..."
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint encontró errores. Corrige los errores antes de hacer commit."
+  exit 1
+fi
+
+# 2. VERIFICAR TYPESCRIPT
+echo "🔍 Verificando TypeScript..."
+npm run type-check
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript encontró errores. Corrige los errores de tipos antes de hacer commit."
+  exit 1
+fi
+
+# 3. VERIFICAR FORMATO
+echo "🎨 Verificando formato con Prettier..."
+npm run format:check
+if [ $? -ne 0 ]; then
+  echo "❌ Archivos no están formateados correctamente. Ejecuta 'npm run format' y vuelve a intentar."
+  exit 1
+fi
+
+# 4. EJECUTAR TESTS
+echo "🧪 Ejecutando tests..."
+npm run test -- --passWithNoTests --watchAll=false --coverage=false
+if [ $? -ne 0 ]; then
+  echo "❌ Los tests fallaron. Corrige los tests antes de hacer commit."
+  exit 1
+fi
+
+# 5. VERIFICAR COMPLEJIDAD DE ARCHIVOS
+echo "📏 Verificando límites de complejidad..."
+npm run verify:complexity
+if [ $? -ne 0 ]; then
+  echo "❌ Algunos archivos exceden los límites de complejidad (máx 15) o tamaño (máx 300 líneas)."
+  echo "Divide los archivos en componentes más pequeños antes de hacer commit."
+  exit 1
+fi
+
+# 6. VERIFICAR ACCESIBILIDAD
+echo "♿ Verificando accesibilidad..."
+npm run verify:a11y
+if [ $? -ne 0 ]; then
+  echo "❌ Se encontraron problemas de accesibilidad. Corrige antes de hacer commit."
+  exit 1
+fi
+
+echo "✅ Todas las verificaciones pasaron. Procediendo con el commit..."

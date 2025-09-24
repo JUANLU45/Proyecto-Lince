@@ -1,0 +1,87 @@
+# Lince-Display Font - Placeholder
+#
+# ESPECIFICACIONES SEGÚN DOCUMENTACIÓN:
+# - DESIGN_SYSTEM.md: Tipografía H1, H2, H3, ButtonText
+# - UI_COMPONENTS.md: BotonPrimario, headers, títulos
+# - APP_BLUEPRINT.md: Títulos pantallas, mensajes prominentes
+# - VERIFICATION_CHECKLIST.md: Sistema tipográfico centralizado
+#
+# CARACTERÍSTICAS TÉCNICAS REQUERIDAS:
+# - Formato: TTF optimizado React Native
+# - Peso: Semi-bold (600) para prominence visual
+# - Estilo: Display font amigable, redondeado, estructurado
+# - Optimización: Pantallas móviles desde 18px+
+# - Rendering: Excelente desde 18px hasta 32px
+#
+# DISEÑO ESPECÍFICO DISPLAY:
+# - Weight: Semi-bold a Bold (600-700) para presencia
+# - Formas: Redondeadas, amigables, no intimidantes
+# - Contrast: Buen contraste stroke pero suave
+# - Details: Elementos sutiles personalidad única proyecto
+# - Proporciones: Ligeramente condensed para títulos
+# - Carácter: Profesional pero playful y cálido
+# - Recognition: Rápido como "importante" sin agresividad
+#
+# INTEGRACIÓN DESIGN SYSTEM:
+# - H1: fontSize 28px, lineHeight 34px, fontWeight 600
+# - H2: fontSize 24px, lineHeight 30px, fontWeight 600  
+# - H3: fontSize 20px, lineHeight 26px, fontWeight 600
+# - ButtonText: fontSize 16px, lineHeight 20px, fontWeight 600
+# - Uso en títulos, headers, botones importantes, emphasis
+#
+# CASOS USO ESPECÍFICOS:
+# - Headers todas las pantallas principales
+# - BotonPrimario y BotonSecundario text
+# - Títulos secciones (IslaMovimiento, etc.)
+# - Progress indicators números prominentes
+# - Success messages celebratorios
+# - Call-to-action text que necesite emphasis visual
+#
+# APLICACIONES POR PANTALLA:
+# - MapaMundoScreen: Títulos islas, navegación principal
+# - ActividadScreen: Título actividad, instrucciones importantes
+# - PortalPadresScreen: Headers secciones, métricas destacadas
+# - Modales: Títulos modales, confirmaciones importantes
+# - Celebraciones: Mensajes "¡Muy bien!" prominentes
+#
+# TERAPÉUTICO SÍNDROME DOWN:
+# - Hierarchy visual clara sin confusión
+# - Recognition rápido como "texto importante"
+# - No agresividad visual que genere ansiedad
+# - Presencia commanding attention pero inviting
+# - Consistency forms para reduce carga cognitiva
+# - Warmth y approachability mantenidas
+#
+# ACCESIBILIDAD DISPLAY:
+# - WCAG 2.1 AA compliance en implementation
+# - Bold weight facilita recognition
+# - Tracking puede ser tighter para títulos
+# - Scaling dinámico sistema soportado
+# - High contrast cuando aplicado colores sistema
+# - VoiceOver/TalkBack compatible
+#
+# PERFORMANCE CARACTERÍSTICAS:
+# - File size objetivo: <350KB (más glyphs permitidos)
+# - Glyphs: Latin básico + caracteres especiales
+# - Ligaduras opcionales para polish
+# - Hinting manual sizes grandes (18px+)
+# - Preload crítico con Lince-Regular
+#
+# IMPLEMENTACIÓN TÉCNICA:
+# ```typescript
+# await Font.loadAsync({
+#   'Lince-Display': require('./assets/fonts/Lince-Display.ttf'),
+# });
+# 
+# // Usage componentes Display:
+# fontFamily: 'Lince-Display',
+# fontWeight: '600'
+# ```
+#
+# DIFERENCIACIÓN VS REGULAR:
+# - Lince-Regular: Body text, instrucciones, contenido
+# - Lince-Display: Headers, títulos, botones, emphasis
+# - Complementarios: Familia visual cohesiva
+# - Hierarchy: Clara distinción functional
+#
+# NOTA: Placeholder para fuente real Lince-Display custom diseñada
