@@ -1,163 +1,78 @@
-# 🦎 Proyecto Lince
+# Proyecto Lince | Código con Propósito
 
-> Una aplicación educativa innovadora diseñada para apoyar el desarrollo sensorial de niños con síndrome de Down a través de actividades interactivas y tecnología de inteligencia artificial adaptativa.
-
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android-lightgrey.svg)
-![License](https://img.shields.io/badge/license-Private-red.svg)
-![Status](https://img.shields.io/badge/status-In%20Development-yellow.svg)
-
-## 🌟 Visión del Proyecto
-
-**Proyecto Lince** tiene como misión crear una herramienta educativa que empodere a niños con síndrome de Down (edades 3-12 años) para desarrollar habilidades de integración sensorial de manera divertida, segura y personalizada.
-
-### 🎯 Objetivos Principales
-
-- **Desarrollo Sensorial:** Actividades específicamente diseñadas para estimular diferentes sistemas sensoriales
-- **Personalización IA:** Adaptación automática basada en el progreso y preferencias de cada niño
-- **Apoyo Familiar:** Portal intuitivo para padres y cuidadores con seguimiento de progreso
-- **Accesibilidad:** Interfaz diseñada específicamente para necesidades especiales
-
-## 🚀 Características Principales
-
-### Para Niños
-- 🎮 **Actividades Interactivas** gamificadas con Leo el Lince
-- 🎨 **Estímulos Multisensoriales** (visual, auditivo, táctil, vestibular)
-- 🤖 **IA Adaptativa** que personaliza la experiencia
-- 🏆 **Sistema de Recompensas** motivacional
-- 😌 **Rincón de Calma** para autorregulación
-
-### Para Familias
-- 📊 **Dashboard de Progreso** con métricas claras
-- 💡 **Insights Personalizados** generados por IA
-- 🏠 **Sugerencias para Casa** que conectan la app con la vida real
-- 📱 **Interfaz Intuitiva** fácil de usar
-
-### Tecnología
-- **React Native + Expo** para desarrollo multiplataforma
-- **TypeScript** para robustez y mantenibilidad
-- **Google Cloud IA** para personalización inteligente
-- **Firebase** para backend y analytics
-
-## 🏗️ Estado de Desarrollo
-
-### ✅ Completado
-- [x] Investigación y fundamentación científica
-- [x] Diseño de experiencia de usuario (UX/UI)
-- [x] Arquitectura técnica y especificaciones
-- [x] Planificación de desarrollo detallada
-- [x] Sistema de diseño completo
-
-### 🔄 En Desarrollo
-- [ ] Configuración del entorno de desarrollo
-- [ ] Implementación de componentes base
-- [ ] Integración con servicios de IA
-- [ ] Desarrollo de actividades principales
-
-### 📅 Próximamente
-- [ ] Testing con usuarios reales
-- [ ] Validación con especialistas
-- [ ] Beta testing con familias
-- [ ] Lanzamiento en stores
-
-## 🛠️ Stack Tecnológico
-
-### Frontend
-```
-React Native 0.72.15
-Expo SDK 54.0.10
-React 18.2.0
-TypeScript 5.6.3
-Zustand 4.4.1 (Estado)
-React Navigation 6.1.9
-```
-
-### Backend & IA
-```
-Firebase (Auth, Firestore, Functions)
-Google Cloud Platform
-Speech-to-Text API
-TensorFlow.js
-Cloud Functions
-```
-
-### DevOps & Testing
-```
-GitHub Actions (CI/CD)
-Jest + React Native Testing Library
-EAS Build & Submit
-Firebase Analytics
-Crashlytics
-```
-
-## 📱 Requisitos del Sistema
-
-### iOS
-- iOS 13.0 o superior
-- iPhone 6s o superior / iPad Air 2 o superior
-- 2GB RAM mínimo
-- 150MB espacio disponible
-
-### Android
-- Android 8.0 (API level 26) o superior
-- 2GB RAM mínimo
-- 150MB espacio disponible
-- Soporte para OpenGL ES 2.0
-
-## 🔒 Privacidad y Seguridad
-
-- **Cumplimiento GDPR** para protección de datos de menores
-- **Consentimiento parental** verificable
-- **Datos anonimizados** para análisis de IA
-- **Cifrado end-to-end** para información sensible
-- **Sin tracking** de terceros
-
-## 👥 Equipo
-
-**Proyecto Lince** está siendo desarrollado por un equipo multidisciplinario que incluye:
-
-- 👩‍💻 Desarrolladores especializados en React Native
-- 🎨 Diseñadores UX/UI con experiencia en accesibilidad
-- 🧠 Especialistas en IA y Machine Learning
-- 🏥 Asesores en terapia ocupacional
-- 👨‍👩‍👧‍👦 Colaboración directa con familias
-
-## 🤝 Colaboración y Feedback
-
-Aunque el código fuente es privado durante el desarrollo, valoramos enormemente el feedback de:
-
-- **Familias** con niños con síndrome de Down
-- **Terapeutas ocupacionales** y especialistas
-- **Educadores** en necesidades especiales
-- **Desarrolladores** interesados en accesibilidad
-
-### 📧 Contacto
-Para colaboraciones, feedback o consultas:
-- **Email:** [contacto@proyectolince.com](mailto:contacto@proyectolince.com)
-- **Website:** [www.proyectolince.com](https://www.proyectolince.com)
-
-## 📜 Licencia
-
-Este proyecto está bajo licencia privada durante el desarrollo. Los derechos de autor pertenecen al equipo de **Proyecto Lince**.
+<p align="center">
+  <strong>Hay software que se escribe con los dedos. Y hay software que se escribe con el corazón.</strong>
+  <br>
+  <em>Este es uno de ellos.</em>
+</p>
 
 ---
 
-## 🌈 Nuestra Filosofía
+### Un Puente Digital Hacia Nuevas Posibilidades
 
-> "Cada niño merece la oportunidad de alcanzar su máximo potencial. La tecnología debe ser un puente, no una barrera, hacia el desarrollo y la alegría."
+**Proyecto Lince** nace de una convicción: la tecnología debe servir como una herramienta para el empoderamiento humano. No es un juego, ni una aplicación más. Es un ecosistema terapéutico digital, meticulosamente diseñado para ser un aliado en el viaje del desarrollo infantil, con un enfoque especializado en la Terapia de Integración Sensorial (TIS) para niños con Síndrome de Down.
 
-**Proyecto Lince** no es solo una aplicación; es una herramienta diseñada con amor, respaldada por ciencia, y construida con la firme creencia de que la tecnología puede hacer una diferencia real en la vida de los niños y sus familias.
+Cada línea de código, cada elemento de diseño y cada decisión arquitectónica en este repositorio están guiados por una única pregunta: **¿Cómo podemos construir una herramienta que realmente ayude?**
 
-## 🎖️ Compromisos
+Esta filosofía ya está en acción. **[VicDown.com](https://vicdown.com/)**, una plataforma hermana de este proyecto, es la prueba viva de nuestro compromiso por crear comunidades y recursos de apoyo reales, profesionales y llenos de propósito.
 
-- ✨ **Calidad sobre velocidad** - Cada feature es cuidadosamente desarrollada y testada
-- 🧒 **Centrado en el niño** - Todas las decisiones priorizan la experiencia del usuario final
-- 🔬 **Basado en evidencia** - Fundamentado en investigación científica actual
-- 🤗 **Inclusivo y accesible** - Diseñado para diferentes niveles de habilidad
-- 🔐 **Privacidad por diseño** - Protección de datos desde el primer día
+El resultado es una plataforma que busca escuchar cuando no hay palabras, adaptarse cuando el camino cambia y celebrar cada pequeño gran logro.
 
 ---
 
-**🦎 Proyecto Lince** - Transformando el aprendizaje, una interacción a la vez.
+### ✨ Nuestros Principios Guía
 
-*Última actualización: Septiembre 2025*
+Este no es un proyecto definido por su stack tecnológico, sino por sus valores.
+
+* **Evidencia, no Suposiciones:** Cada funcionalidad se fundamenta en la investigación científica más reciente (2023-2025) sobre neurobiología y TIS. No asumimos, estudiamos.
+* **Diseño Digno y Accesible:** Creemos que la accesibilidad no es una característica, sino un derecho. La interfaz está diseñada para reducir la carga cognitiva y ser un espacio digital seguro y regulador en sí mismo.
+* **Código con Compasión:** Escribimos software robusto y de calidad enterprise porque entendemos que detrás de cada interacción hay un niño que merece una herramienta que funcione a la perfección, sin frustraciones.
+* **Empoderamiento, no Dependencia:** Nuestro objetivo final es la generalización de habilidades. La aplicación es un andamio, diseñado para construir puentes hacia la participación en el mundo real, en colaboración con padres y terapeutas.
+
+---
+
+### 🚀 ¿Qué Hemos Construido?
+
+Un ecosistema integral que une la ciencia clínica con la tecnología de vanguardia.
+
+| Característica Clave | Descripción |
+| :--- | :--- |
+| 🧠 **Motor de IA Adaptativa** | Un sistema inteligente que personaliza las actividades en tiempo real, aprendiendo del ritmo de cada niño para ofrecer siempre el "reto justo". |
+| 👨‍👩‍👧 **Portal Colaborativo** | Un puente entre el hogar y la terapia. Un espacio para que padres y profesionales puedan seguir el progreso, colaborar y prescribir actividades de forma coordinada. |
+| 🦎 **Actividades Terapéuticas** | Una biblioteca de juegos interactivos que traducen los principios probados de la TIS en mecánicas digitales atractivas y efectivas. |
+| 🛡️ **Arquitectura Abierta y Segura** | Construido con un enfoque en la privacidad (GDPR-K) y la portabilidad (ONNX), asegurando que la tecnología sirva a la misión sin ataduras a un proveedor. |
+
+---
+
+### 🛠️ Pila Tecnológica
+
+Construimos sobre una base moderna, estable y escalable.
+
+-   **Framework:** React Native 0.72.15 + Expo SDK 54.0.10
+-   **Lenguaje:** TypeScript (con modo estricto)
+-   **Estado:** Zustand
+-   **Backend & IA:** Firebase (con capa de abstracción) y Google Cloud, con modelos portables ONNX.
+-   **Calidad de Código:** ESLint, Prettier, Husky.
+-   **Testing:** Jest, React Native Testing Library, Detox.
+
+*Consulta la arquitectura completa en el documento `TECHNOLOGY.md`.*
+
+---
+
+### 🤝 Únete a la Misión
+
+Este proyecto es más grande que su código. Es una oportunidad de construir algo con un impacto real y duradero. Si compartes nuestra visión y te comprometes con nuestros estándares de excelencia, tu contribución es bienvenida.
+
+1.  **Empieza por la Documentación:** Este no es un repositorio ordinario. Para contribuir, es **indispensable** asimilar la filosofía del proyecto. Empieza por leer los documentos `PROJECT_REQUIREMENTS.md` y, sobre todo, las `REGLAS_COMPORTAMIENTO.md`.
+2.  **Calidad por Encima de Todo:** Aquí, un `TODO` en el código es una promesa rota. Solo se acepta código de producción, completamente funcional y testeado.
+3.  **Haz un Pull Request con Propósito:** Envía tus contribuciones explicando no solo *qué* has cambiado, sino *cómo* ese cambio sirve a la misión principal del proyecto.
+
+```bash
+# 1. Clona el repositorio para explorarlo
+git clone [https://github.com/tu-usuario/proyecto-lince.git](https://github.com/tu-usuario/proyecto-lince.git)
+
+# 2. Instala las dependencias
+npm install
+
+# 3. Inicia el proyecto
+npx expo start
