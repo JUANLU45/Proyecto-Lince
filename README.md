@@ -1,183 +1,84 @@
-# Proyecto Lince: Documentación del Directorio
+# 📋 GUÍA ASSETS REALES - PROYECTO LINCE
 
-## 📁 Estructura de Documentación
+**¿QUÉ ES ESTO?** Esta carpeta contiene guías **SUPER FÁCILES** de qué archivos reales necesitas para reemplazar los placeholders.
 
-Este directorio contiene toda la documentación base del **Proyecto Lince**, una aplicación educativa y terapéutica para niños con síndrome de Down.
+## 📁 **ESTRUCTURA DE GUÍAS**
 
-### 📋 Documentos Principales
+```
+ASSETS_REALES/
+├── 01_LEO_IMAGENES.md          # 🦎 3 imágenes de Leo el Lince
+├── 02_FONDOS_ISLAS.md          # 🏝️ 3 backgrounds de islas sensoriales  
+├── 03_ICONOS_UI.md             # 🔘 3 iconos de botones (play/pause/home)
+├── 04_AUDIO_FONDO.md           # 🎵 2 músicas de fondo (calma/energética)
+├── 05_AUDIO_FEEDBACK.md        # 🔊 3 sonidos de feedback (éxito/tap/intento)
+├── 06_FUENTES_TEXTO.md         # ✏️ Fuentes personalizadas para textos
+└── README.md                   # 📖 Esta guía principal
+```
 
-#### 1. **PROJECT_REQUIREMENTS.md**
-**Propósito:** Especificación completa de requisitos funcionales y no funcionales.
+## 🎯 **CÓMO USAR ESTAS GUÍAS**
 
-**Contenido:**
-- Visión del proyecto y población objetivo
-- Requisitos funcionales (RF-001 a RF-007)
-- Requisitos de IA (RF-IA-001 a RF-IA-005)
-- Requisitos no funcionales (usabilidad, rendimiento, seguridad)
-- Criterios de aceptación y roadmap de desarrollo
+### **PASO 1: Lee cada archivo .md**
+- Cada archivo explica **QUÉ** necesitas crear
+- **ESPECIFICACIONES EXACTAS** técnicas
+- **EJEMPLOS VISUALES** de cómo debe verse
 
-**Para quién:** Product Owners, desarrolladores, stakeholders técnicos
+### **PASO 2: Encarga/crea los assets**
+- Entregar especificaciones a diseñador
+- O crear tú mismo con las specs exactas
 
----
+### **PASO 3: Reemplaza placeholders**
+- Borrar archivo `.placeholder`
+- Poner archivo real con **MISMO NOMBRE**
 
-#### 2. **APP_BLUEPRINT.md**
-**Propósito:** Especificación detallada de pantallas, flujos de usuario e integración con IA.
+## 🔧 **HERRAMIENTAS RECOMENDADAS**
 
-**Contenido:**
-- Mapeo completo de todas las pantallas
-- Flujos de navegación y experiencia de usuario
-- Especificaciones de actividades sensoriales
-- Integración del motor de IA adaptativo
-- Portal para padres y terapeutas
+### **Para IMÁGENES (Leo, fondos, iconos):**
+- 🎨 **Adobe Illustrator** (profesional)
+- 🎨 **Figma** (gratis, online)
+- 🎨 **Canva** (fácil, templates)
+- 🎨 **GIMP** (gratis, completo)
 
-**Para quién:** Diseñadores UX/UI, desarrolladores frontend, testers
+### **Para AUDIO:**
+- 🎵 **Audacity** (gratis, fácil)
+- 🎵 **GarageBand** (Mac, gratis)
+- 🎵 **Adobe Audition** (profesional)
+- 🎵 **Freesound.org** (descargar sonidos libres)
 
----
+### **Para FUENTES:**
+- ✏️ **Google Fonts** (gratis, accesibles)
+- ✏️ **Font Squirrel** (gratis, comerciales)
+- ✏️ **Adobe Fonts** (profesional)
 
-#### 3. **DESIGN_SYSTEM.md**
-**Propósito:** Sistema de diseño unificado con componentes visuales y de IA.
+## ⚠️ **IMPORTANTE RECORDAR**
 
-**Contenido:**
-- Paleta de colores terapéutica
-- Tipografía y espaciado
-- Especificaciones de botones e iconografía
-- Componentes específicos de IA (sugerencias, insights)
-- Guidelines de accesibilidad
+1. ✅ **NOMBRES EXACTOS**: Los archivos reales deben tener el mismo nombre que los placeholders (sin .placeholder)
+2. ✅ **UBICACIÓN**: Poner en la MISMA carpeta que el placeholder
+3. ✅ **FORMATO**: Seguir exactamente el formato especificado (PNG/MP3/WAV/TTF)
+4. ✅ **TAMAÑO**: Respetar resoluciones y duraciones especificadas
 
-**Para quién:** Diseñadores, desarrolladores frontend, QA visual
+## 🚀 **ORDEN RECOMENDADO DE CREACIÓN**
 
----
+### **PRIORIDAD ALTA (críticos):**
+1. 🦎 **leo-default.png** - Avatar principal Leo
+2. 🔘 **play-button.png** - Botón iniciar actividades
+3. 🔘 **pause-button.png** - Botón pausar actividades
 
-#### 4. **TECHNOLOGY.md**
-**Propósito:** Arquitectura técnica, stack tecnológico y estructura del proyecto.
+### **PRIORIDAD MEDIA:**
+4. 🏝️ **movement-island.png** - Fondo isla movimiento
+5. 🎵 **background-calm.mp3** - Música relajante
+6. 🔊 **tap-feedback.wav** - Sonido tocar elementos
 
-**Contenido:**
-- Pila tecnológica (React Native, TypeScript, Firebase)
-- Arquitectura de servicios de IA (Google Cloud)
-- Estructura de archivos y carpetas
-- Configuración de desarrollo y APIs
-- Especificaciones de integración cloud
+### **PRIORIDAD BAJA (pueden esperar):**
+7. 😊 **leo-happy.png** - Leo celebrando
+8. 🤔 **leo-thinking.png** - Leo pensativo
+9. Resto de fondos y audios
 
-**Para quién:** Desarrolladores, arquitectos de software, DevOps
+## 📞 **¿NECESITAS AYUDA?**
 
----
+Cada archivo .md tiene:
+- ✅ **Especificaciones técnicas exactas**
+- ✅ **Ejemplos de cómo debe verse/sonar**
+- ✅ **Herramientas recomendadas específicas**
+- ✅ **Tips para niños con síndrome Down**
 
-#### 5. **UI_COMPONENTS.md**
-**Propósito:** Especificación técnica de todos los componentes de la interfaz.
-
-**Contenido:**
-- Jerarquía y arquitectura de componentes React Native
-- Props y interfaces TypeScript de cada componente
-- Especificaciones de diseño y comportamiento
-- Estados, animaciones y responsividad
-- Criterios de accesibilidad y testing
-
-**Para quién:** Desarrolladores frontend, diseñadores, testers de UI
-
----
-
-#### 6. **DEVELOPMENT_PLAN.md**
-**Propósito:** Plan completo de desarrollo con metodología ágil adaptada.
-
-**Contenido:**
-- Metodología Scrum adaptada para UX infantil
-- Estructura del equipo y responsabilidades
-- Roadmap detallado por fases (12 meses)
-- Gestión de calidad y criterios de "Done"
-- Gestión de riesgos y métricas de éxito
-
-**Para quién:** Project Managers, Product Owners, equipo completo
-
----
-
-## 🎯 Propósito del Proyecto
-
-**Proyecto Lince** es una aplicación móvil educativa diseñada específicamente para ayudar a niños con síndrome de Down (3-12 años) a desarrollar habilidades de integración sensorial a través de:
-
-- **Actividades interactivas** personalizadas
-- **Inteligencia Artificial adaptativa** que aprende del comportamiento del niño
-- **Portal para padres** con seguimiento de progreso
-- **Enfoque terapéutico** basado en investigación científica
-
-## 🚀 Características Principales
-
-### Para Niños
-- Actividades sensoriales gamificadas
-- Personaje mascota "Leo el Lince" 
-- Feedback inmediato y positivo
-- Adaptación automática de dificultad
-- Interfaz accesible y simple
-
-### Para Padres
-- Dashboard de progreso detallado
-- Insights generados por IA
-- Sugerencias para actividades del mundo real
-- Comunicación con terapeutas
-
-### Tecnología
-- **React Native + Expo** para desarrollo multiplataforma
-- **TypeScript** para robustez del código
-- **Google Cloud IA** para personalización adaptativa
-- **Firebase** para backend y analytics
-
-## 📊 Estados de Documentación
-
-| Documento | Estado | Última Actualización | Completitud |
-|-----------|--------|---------------------|-------------|
-| PROJECT_REQUIREMENTS.md | ✅ Completo | 2025-09-23 | 100% |
-| APP_BLUEPRINT.md | ✅ Completo | Original | 95% |
-| DESIGN_SYSTEM.md | ✅ Completo | Original | 95% |
-| TECHNOLOGY.md | ✅ Completo | Original | 90% |
-| UI_COMPONENTS.md | ✅ Completo | 2025-09-23 | 100% |
-| DEVELOPMENT_PLAN.md | ✅ Completo | 2025-09-23 | 100% |
-
-## 🔄 Proceso de Actualización
-
-### Responsabilidades
-- **Product Owner:** PROJECT_REQUIREMENTS.md
-- **UX Designer:** APP_BLUEPRINT.md, DESIGN_SYSTEM.md
-- **Tech Lead:** TECHNOLOGY.md, UI_COMPONENTS.md
-- **Project Manager:** DEVELOPMENT_PLAN.md
-
-### Ciclo de Revisión
-- **Semanal:** Revisión de documentos en sprint activo
-- **Por sprint:** Actualización completa basada en feedback
-- **Por fase:** Revisión integral de toda la documentación
-- **Pre-lanzamiento:** Validación final y archivado de versión
-
-## 📝 Convenciones de Documentación
-
-### Formato
-- **Markdown** para todos los documentos
-- **Estructura jerárquica** con numeración clara
-- **Códigos de referencia** para requisitos (RF-001, RNF-001, etc.)
-- **Checkboxes** para elementos accionables
-- **Tablas** para especificaciones técnicas
-
-### Estilo
-- **Lenguaje claro** evitando tecnicismos innecesarios
-- **Ejemplos de código** cuando sea relevante
-- **Referencias cruzadas** entre documentos
-- **Emojis descriptivos** para mejorar legibilidad
-
-## 🔗 Referencias Externas
-
-### Investigación de Base
-- Estudios sobre integración sensorial en síndrome de Down
-- Guidelines de accesibilidad WCAG 2.1
-- Best practices para aplicaciones infantiles
-- Investigación en IA para educación especial
-
-### Recursos Técnicos
-- [React Native Documentation](https://reactnative.dev/)
-- [Expo Documentation](https://docs.expo.dev/)
-- [Google Cloud AI](https://cloud.google.com/ai)
-- [Firebase Documentation](https://firebase.google.com/docs)
-
----
-
-**Versión:** 1.0
-**Fecha de creación:** 24 de septiembre de 2025
-**Mantenido por:** Equipo Proyecto Lince
-
-*Esta documentación es un documento vivo que evoluciona con el proyecto. Toda contribución debe mantener el estándar de calidad establecido, porque los niños se merecen lo mejor.*
+**¡Empezar por `01_LEO_IMAGENES.md` - es lo más importante!** 🦎✨
