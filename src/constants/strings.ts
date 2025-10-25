@@ -175,8 +175,10 @@ export const strings = {
     sugerencias: {
       titulo: '¡Una idea de Leo!',
       descanso: 'Parece que necesitas un pequeño descanso. ¿Vamos al Rincón de Calma?',
+      descansoCorto: 'Considera tomar un descanso',
       cambioActividad: 'Quizás te guste probar esta otra actividad',
       celebracion: '¡Estás haciendo un trabajo increíble hoy!',
+      razonamientoLocal: 'Nivel de frustración detectado por análisis local',
       aceptar: '¡Sí, vamos!',
       rechazar: 'Ahora no',
       cerrar: 'Cerrar',

@@ -19,6 +19,7 @@ import type {
  */
 class AnalyticsService {
   private static instance: AnalyticsService;
+  private contadorInteracciones = 0;
 
   private constructor() {}
 
@@ -88,7 +89,10 @@ class AnalyticsService {
     try {
       // Solo loggear interacciones importantes para no saturar
       // Según PROJECT_REQUIREMENTS.md RNF-006: Consumo de batería optimizado
-      if (interaccion.exitosa || Math.random() < 0.1) {
+      this.contadorInteracciones++;
+      const debeLoggear = interaccion.exitosa || this.contadorInteracciones % 10 === 0;
+
+      if (debeLoggear) {
         const analytics = FirebaseService.getAnalytics();
         await analytics().logEvent('interaccion_usuario', {
           perfil_id: perfilId,

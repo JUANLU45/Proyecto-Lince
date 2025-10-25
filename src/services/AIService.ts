@@ -8,6 +8,7 @@
  */
 
 import FirebaseService from './FirebaseService';
+import { strings } from '../constants';
 import type {
   SugerenciaIA,
   InsightPadres,
@@ -290,7 +291,7 @@ class AIService {
     const sugerencias: string[] = [];
 
     if (nivelFrustracion > 60) {
-      sugerencias.push('Considera tomar un descanso');
+      sugerencias.push(strings.ia.sugerencias.descansoCorto);
     }
 
     return {
@@ -310,11 +311,11 @@ class AIService {
     return {
       id: `fallback-${Date.now()}`,
       tipo: 'rincón_calma',
-      titulo: '¡Una idea de Leo!',
-      descripcion: 'Parece que necesitas un pequeño descanso. ¿Vamos al Rincón de Calma?',
+      titulo: strings.ia.sugerencias.titulo,
+      descripcion: strings.ia.sugerencias.descanso,
       prioridad: contexto.nivelFrustracion > 80 ? 'alta' : 'media',
       timestamp: new Date(),
-      razonamiento: 'Nivel de frustración detectado por análisis local',
+      razonamiento: strings.ia.sugerencias.razonamientoLocal,
       terapeuta: 'analistaGestos',
     };
   }

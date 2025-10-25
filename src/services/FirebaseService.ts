@@ -52,9 +52,11 @@ class FirebaseService {
         cacheSizeBytes: firestore.CACHE_SIZE_UNLIMITED,
       });
 
-      // Configurar región de Functions
+      // Configurar emulador de Functions solo en desarrollo
       // Según TECHNOLOGY.md: Cloud Functions para procesamiento de IA
-      functions().useFunctionsEmulator('http://localhost:5001'); // Solo en desarrollo
+      if (__DEV__) {
+        functions().useFunctionsEmulator('http://localhost:5001');
+      }
 
       this.initialized = true;
     } catch (error) {
