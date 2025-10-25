@@ -17,8 +17,7 @@ module.exports = {
     sourceType: 'module'
   },
   env: {
-    'react-native/react-native': true,
-    es6: true,
+    es2021: true,
     node: true
   },
   rules: {

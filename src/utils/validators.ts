@@ -45,7 +45,7 @@ export const validarVolumen = (volumen: number): boolean => {
  */
 export const validarTelefono = (telefono: string): boolean => {
   // Acepta formatos: +34123456789, 123456789, etc.
-  const regex = /^[\d\s\+\-()]{9,}$/;
+  const regex = /^[\d\s+\-()]{9,}$/;
   return regex.test(telefono);
 };
 
