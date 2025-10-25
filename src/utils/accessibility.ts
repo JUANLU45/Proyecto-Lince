@@ -4,6 +4,7 @@
  */
 
 import { BaseProps } from '../types';
+import { strings } from '../constants';
 
 /**
  * Crea props de accesibilidad estándar para un componente
@@ -89,8 +90,9 @@ export const generarAnuncioAccesibilidad = (mensaje: string, importancia: 'asser
  */
 export const anunciarTiempoRestante = (segundos: number): string => {
   if (segundos < 60) {
-    return `${Math.floor(segundos)} segundos restantes`;
+    return `${Math.floor(segundos)} ${strings.tiempo.segundos} ${strings.tiempo.restantes}`;
   }
   const minutos = Math.floor(segundos / 60);
-  return `${minutos} ${minutos === 1 ? 'minuto' : 'minutos'} restantes`;
+  const unidadMinutos = minutos === 1 ? strings.tiempo.minuto : strings.tiempo.minutos;
+  return `${minutos} ${unidadMinutos} ${strings.tiempo.restantes}`;
 };

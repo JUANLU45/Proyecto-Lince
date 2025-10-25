@@ -262,10 +262,13 @@ export const strings = {
   tiempo: {
     segundos: 'segundos',
     minutos: 'minutos',
+    minuto: 'minuto',
     horas: 'horas',
     dias: 'días',
     hoy: 'Hoy',
     ayer: 'Ayer',
+    hace: 'Hace',
+    restantes: 'restantes',
     estaSemana: 'Esta semana',
   },
 

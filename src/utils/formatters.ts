@@ -40,7 +40,7 @@ export const formatFechaRelativa = (fecha: Date): string => {
 
   if (dias === 0) return strings.tiempo.hoy;
   if (dias === 1) return strings.tiempo.ayer;
-  if (dias < 7) return `Hace ${dias} ${strings.tiempo.dias}`;
+  if (dias < 7) return `${strings.tiempo.hace} ${dias} ${strings.tiempo.dias}`;
 
   // Si es más de una semana, formato completo
   return fecha.toLocaleDateString('es-ES', {
