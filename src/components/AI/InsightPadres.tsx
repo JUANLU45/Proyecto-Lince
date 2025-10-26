@@ -128,7 +128,7 @@ const InsightPadres: React.FC<InsightPadresProps> = ({
       onPress={onPresionar}
       activeOpacity={0.7}
       accessible={true}
-      accessibilityLabel={'Insight: ' + insight.titulo}
+      accessibilityLabel={strings.accesibilidad.insight + ': ' + insight.titulo}
       accessibilityRole="button"
       accessibilityHint="Toca para ver más detalles"
     >
@@ -138,7 +138,7 @@ const InsightPadres: React.FC<InsightPadresProps> = ({
     <View
       style={styles.container}
       accessible={true}
-      accessibilityLabel={'Insight: ' + insight.titulo}
+      accessibilityLabel={strings.accesibilidad.insight + ': ' + insight.titulo}
       accessibilityRole="text"
     >
       {containerContent}

@@ -252,6 +252,12 @@ export const strings = {
     avatarLeo: 'Leo el Lince',
     barraProgreso: 'Barra de progreso',
     menu: 'Menú principal',
+    areaInteractiva: 'Área interactiva',
+    tocarAquiInteractuar: 'Toca aquí para interactuar',
+    feedback: 'Feedback',
+    porCiento: 'por ciento',
+    insight: 'Insight',
+    procesandoIA: 'Procesando con IA',
   },
 
   // ========================================

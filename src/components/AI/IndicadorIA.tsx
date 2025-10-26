@@ -17,7 +17,7 @@ import {
   StyleSheet,
   Animated,
 } from 'react-native';
-import { theme } from '../../constants';
+import { theme, strings } from '../../constants';
 import type { BaseProps } from '../../types';
 
 export interface IndicadorIAProps extends BaseProps {
@@ -95,7 +95,7 @@ const IndicadorIA: React.FC<IndicadorIAProps> = ({
         { opacity: opacityAnim },
       ]}
       accessible={accessible}
-      accessibilityLabel={accessibilityLabel || 'Procesando con IA'}
+      accessibilityLabel={accessibilityLabel || strings.accesibilidad.procesandoIA}
       accessibilityHint={accessibilityHint}
       testID={testID}
     >

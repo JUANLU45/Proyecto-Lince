@@ -15,7 +15,7 @@ import {
   StyleSheet,
   Animated,
 } from 'react-native';
-import { theme } from '../../constants';
+import { theme, strings } from '../../constants';
 import type { FeedbackVisualProps } from '../../types';
 
 /**
@@ -121,7 +121,7 @@ const FeedbackVisual: React.FC<FeedbackVisualProps> = ({
         },
       ]}
       accessible={accessible}
-      accessibilityLabel={accessibilityLabel || 'Feedback: ' + tipo}
+      accessibilityLabel={accessibilityLabel || strings.accesibilidad.feedback + ': ' + tipo}
       accessibilityHint={accessibilityHint}
       testID={testID}
       pointerEvents="none"

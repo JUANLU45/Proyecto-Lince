@@ -16,7 +16,7 @@ import {
   StyleSheet,
   Animated,
 } from 'react-native';
-import { theme } from '../../constants';
+import { theme, strings } from '../../constants';
 import type { BarraProgresoProps } from '../../types';
 
 /**
@@ -52,7 +52,7 @@ const BarraProgreso: React.FC<BarraProgresoProps> = ({
   return (
     <View
       accessible={accessible}
-      accessibilityLabel={accessibilityLabel || 'Barra de progreso: ' + Math.round(progreso) + ' por ciento'}
+      accessibilityLabel={accessibilityLabel || strings.accesibilidad.barraProgreso + ': ' + Math.round(progreso) + ' ' + strings.accesibilidad.porCiento}
       accessibilityHint={accessibilityHint}
       accessibilityRole="progressbar"
       testID={testID}

@@ -15,7 +15,7 @@ import {
   StyleSheet,
   GestureResponderEvent,
 } from 'react-native';
-import { theme } from '../../constants';
+import { theme, strings } from '../../constants';
 import type { AreaInteractivaProps } from '../../types';
 
 /**
@@ -40,8 +40,8 @@ const AreaInteractiva: React.FC<AreaInteractivaProps> = ({
       style={styles.container}
       onTouchEnd={handleTouch}
       accessible={accessible}
-      accessibilityLabel={accessibilityLabel || 'Área interactiva'}
-      accessibilityHint={accessibilityHint || 'Toca aquí para interactuar'}
+      accessibilityLabel={accessibilityLabel || strings.accesibilidad.areaInteractiva}
+      accessibilityHint={accessibilityHint || strings.accesibilidad.tocarAquiInteractuar}
       accessibilityRole="button"
       testID={testID}
     >
