@@ -5,6 +5,7 @@
 
 export { default as theme } from './theme';
 export { default as strings } from './strings';
+export { firebaseConfig } from './firebaseConfig';
 
 export type { Theme, ThemeColors, ThemeSpacing } from './theme';
 export type { Strings } from './strings';

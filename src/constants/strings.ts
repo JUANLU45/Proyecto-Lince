@@ -19,6 +19,7 @@ export const strings = {
     aceptar: 'Aceptar',
     guardar: 'Guardar',
     cerrar: 'Cerrar',
+    continuar: 'Continuar',
     tiempoEstimado: 'Tiempo estimado',
   },
 

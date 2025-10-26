@@ -69,3 +69,33 @@ export type {
   InsightPadresProps,
   EstadoProcesamientoIA,
 } from './IA';
+
+// Navigation types
+export type {
+  RootStackParamList,
+  TabParamList,
+  SplashScreenNavigationProp,
+  OnboardingScreenNavigationProp,
+  TutorialScreenNavigationProp,
+  MapaMundoScreenNavigationProp,
+  IslaScreenNavigationProp,
+  PreActividadScreenNavigationProp,
+  ActividadScreenNavigationProp,
+  RecompensaScreenNavigationProp,
+  RinconCalmaScreenNavigationProp,
+  SugerenciaIAScreenNavigationProp,
+  PortalPadresScreenNavigationProp,
+  ProgresoDetalladoScreenNavigationProp,
+  ConfiguracionScreenNavigationProp,
+  AdminPanelScreenNavigationProp,
+  IslaScreenRouteProp,
+  PreActividadScreenRouteProp,
+  ActividadScreenRouteProp,
+  RecompensaScreenRouteProp,
+  SugerenciaIAScreenRouteProp,
+  IslaScreenProps,
+  PreActividadScreenProps,
+  ActividadScreenProps,
+  RecompensaScreenProps,
+  SugerenciaIAScreenProps,
+} from './Navigation';

@@ -78,7 +78,7 @@ export interface ActividadContainerProps extends BaseProps {
 export interface AreaInteractivaProps extends BaseProps {
   onTouch: (x: number, y: number) => void;
   onGesture?: (tipo: string) => void;
-  sensibilidad: number; // 0-100
+  sensibilidad?: number; // 0-100 (opcional)
   children?: ReactNode;
 }
 
