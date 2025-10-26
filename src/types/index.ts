@@ -98,4 +98,7 @@ export type {
   ActividadScreenProps,
   RecompensaScreenProps,
   SugerenciaIAScreenProps,
+  RinconCalmaScreenProps,
+  ProgresoDetalladoScreenProps,
+  AdminPanelScreenProps,
 } from './Navigation';

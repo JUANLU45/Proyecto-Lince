@@ -97,3 +97,15 @@ export type SugerenciaIAScreenProps = {
   navigation: SugerenciaIAScreenNavigationProp;
   route: SugerenciaIAScreenRouteProp;
 };
+
+export type RinconCalmaScreenProps = {
+  navigation: RinconCalmaScreenNavigationProp;
+};
+
+export type ProgresoDetalladoScreenProps = {
+  navigation: ProgresoDetalladoScreenNavigationProp;
+};
+
+export type AdminPanelScreenProps = {
+  navigation: AdminPanelScreenNavigationProp;
+};
