@@ -5,7 +5,7 @@
  * Basado en: APP_BLUEPRINT.md y UI_COMPONENTS.md
  */
 
-import type { NavigationProp, RouteProp } from '@react-navigation/native';
+import type { NavigationProp, RouteProp, CompositeNavigationProp } from '@react-navigation/native';
 import type { StackNavigationProp } from '@react-navigation/stack';
 import type { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import type { TipoIsla } from './Actividad';
@@ -49,16 +49,28 @@ export type TabParamList = {
 export type SplashScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Splash'>;
 export type OnboardingScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Onboarding'>;
 export type TutorialScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Tutorial'>;
-export type MapaMundoScreenNavigationProp = BottomTabNavigationProp<TabParamList, 'MapaMundo'>;
+// Composite navigation types para pantallas en TabNavigator que necesitan acceso al Stack
+export type MapaMundoScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabParamList, 'MapaMundo'>,
+  StackNavigationProp<RootStackParamList>
+>;
+export type PortalPadresScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabParamList, 'PortalPadres'>,
+  StackNavigationProp<RootStackParamList>
+>;
+export type ConfiguracionScreenNavigationProp = CompositeNavigationProp<
+  BottomTabNavigationProp<TabParamList, 'Configuracion'>,
+  StackNavigationProp<RootStackParamList>
+>;
+
+// Stack navigation types
 export type IslaScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Isla'>;
 export type PreActividadScreenNavigationProp = StackNavigationProp<RootStackParamList, 'PreActividad'>;
 export type ActividadScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Actividad'>;
 export type RecompensaScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Recompensa'>;
 export type RinconCalmaScreenNavigationProp = StackNavigationProp<RootStackParamList, 'RinconCalma'>;
 export type SugerenciaIAScreenNavigationProp = StackNavigationProp<RootStackParamList, 'SugerenciaIA'>;
-export type PortalPadresScreenNavigationProp = BottomTabNavigationProp<TabParamList, 'PortalPadres'>;
 export type ProgresoDetalladoScreenNavigationProp = StackNavigationProp<RootStackParamList, 'ProgresoDetallado'>;
-export type ConfiguracionScreenNavigationProp = BottomTabNavigationProp<TabParamList, 'Configuracion'>;
 export type AdminPanelScreenNavigationProp = StackNavigationProp<RootStackParamList, 'AdminPanel'>;
 
 /**
