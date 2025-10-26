@@ -10,6 +10,19 @@
 
 export const strings = {
   // ========================================
+  // STRINGS COMUNES Y REUTILIZABLES
+  // ========================================
+
+  common: {
+    cargando: 'Cargando...',
+    cancelar: 'Cancelar',
+    aceptar: 'Aceptar',
+    guardar: 'Guardar',
+    cerrar: 'Cerrar',
+    tiempoEstimado: 'Tiempo estimado',
+  },
+
+  // ========================================
   // PANTALLAS PRINCIPALES
   // ========================================
 
@@ -133,6 +146,14 @@ export const strings = {
       actividadesCompletadas: 'Actividades completadas',
       rachaActual: 'Racha actual',
       dias: 'días',
+    },
+
+    resumenSemanal: {
+      titulo: 'Resumen Semanal',
+      actividadesCompletadas: 'Actividades',
+      tiempoTotal: 'Tiempo',
+      rachaDias: 'Racha',
+      logros: 'Logros',
     },
 
     insights: {
