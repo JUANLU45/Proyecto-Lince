@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Proyecto Lince",
+    "slug": "proyecto-lince",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "src/assets/images/**",
+      "src/assets/audio/critical/**",
+      "src/assets/fonts/**"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.proyectolince.app",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.proyectolince.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-asset",
+        {
+          "cache": true,
+          "cacheDirectory": "assets-cache"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "proyecto-lince"
+      }
+    }
+  }
+}
