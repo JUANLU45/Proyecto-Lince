@@ -12,7 +12,7 @@ interface ConfiguracionScreenProps {
   navigation: ConfiguracionScreenNavigationProp;
 }
 
-const ConfiguracionScreen: React.FC<ConfiguracionScreenProps> = ({ navigation }) => {
+const ConfiguracionScreen: React.FC<ConfiguracionScreenProps> = ({ navigation: _navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Configuración</Text>

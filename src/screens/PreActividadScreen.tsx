@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import type { PreActividadScreenProps } from '../types';
 import { theme, strings } from '../constants';
@@ -27,7 +27,6 @@ import { BotonPrimario, LeoAnimado } from '../components';
  */
 const PreActividadScreen: React.FC<PreActividadScreenProps> = ({ route, navigation }) => {
   const { actividadId } = route.params;
-  const [ready, setReady] = useState(true);
 
   const handleEmpezar = () => {
     navigation.navigate('Actividad', { actividadId });
@@ -43,7 +42,7 @@ const PreActividadScreen: React.FC<PreActividadScreenProps> = ({ route, navigati
             loop={true}
           />
           <Text style={styles.explicacion}>
-            ¡Vamos a divertirnos juntos! Te voy a enseñar cómo hacer esta actividad.
+            {strings.actividades.preActividad.explicacionLeo}
           </Text>
         </View>
 
@@ -52,7 +51,7 @@ const PreActividadScreen: React.FC<PreActividadScreenProps> = ({ route, navigati
           <Text style={styles.previewEmoji}>🎯</Text>
           <Text style={styles.actividadTitulo}>Actividad: {actividadId}</Text>
           <Text style={styles.actividadDescripcion}>
-            Prepárate para una experiencia divertida de aprendizaje.
+            {strings.actividades.preActividad.descripcionPreview}
           </Text>
         </View>
 
@@ -60,7 +59,7 @@ const PreActividadScreen: React.FC<PreActividadScreenProps> = ({ route, navigati
         <View style={styles.configContainer}>
           <Text style={styles.configTitulo}>{strings.actividades.configuracion.titulo}</Text>
           <Text style={styles.configNote}>
-            Configuración básica establecida para tu comodidad
+            {strings.actividades.preActividad.configuracionNota}
           </Text>
         </View>
       </ScrollView>

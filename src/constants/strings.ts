@@ -70,6 +70,7 @@ export const strings = {
       calma: {
         nombre: 'Rincón de Calma',
         descripcion: 'Relájate y respira tranquilo',
+        disponibleSiempre: 'Siempre disponible',
       },
     },
   },
@@ -103,6 +104,13 @@ export const strings = {
       sigue: '¡Sigue así!',
       loLograste: '¡Lo lograste!',
       intenta: '¡Inténtalo de nuevo!',
+    },
+
+    // Pre-actividad
+    preActividad: {
+      explicacionLeo: '¡Vamos a divertirnos juntos! Te voy a enseñar cómo hacer esta actividad.',
+      descripcionPreview: 'Prepárate para una experiencia divertida de aprendizaje.',
+      configuracionNota: 'Configuración básica establecida para tu comodidad',
     },
   },
 

@@ -3,7 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
   TouchableOpacity,
   FlatList,
 } from 'react-native';
@@ -302,8 +301,8 @@ function getDificultadLabel(dificultad: NivelDificultad): string {
   return labels[dificultad];
 }
 
-function getDificultadColor(dificultad: NivelDificultad) {
-  const colors: Record<NivelDificultad, any> = {
+function getDificultadColor(dificultad: NivelDificultad): { backgroundColor: string } {
+  const colors: Record<NivelDificultad, { backgroundColor: string }> = {
     básico: { backgroundColor: theme.colors.verdeJungla },
     intermedio: { backgroundColor: theme.colors.amarilloSol },
     avanzado: { backgroundColor: theme.colors.rojoPeligro },

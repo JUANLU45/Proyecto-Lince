@@ -5,17 +5,14 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  Dimensions,
 } from 'react-native';
 import type { MapaMundoScreenNavigationProp, TipoIsla } from '../types';
+import { theme, strings } from '../constants';
+import { AvatarLeo, BarraProgreso } from '../components';
 
 interface MapaMundoScreenProps {
   navigation: MapaMundoScreenNavigationProp;
 }
-import { theme, strings } from '../constants';
-import { AvatarLeo, BarraProgreso } from '../components';
-
-const { width } = Dimensions.get('window');
 
 /**
  * MapaMundoScreen - Hub central de navegación
@@ -207,7 +204,7 @@ const MapaMundoScreen: React.FC<MapaMundoScreenProps> = ({ navigation }) => {
               {strings.mapa.islas.calma.descripcion}
             </Text>
             <View style={styles.calmaIndicador}>
-              <Text style={styles.calmaTexto}>Siempre disponible</Text>
+              <Text style={styles.calmaTexto}>{strings.mapa.islas.calma.disponibleSiempre}</Text>
             </View>
           </View>
         </TouchableOpacity>

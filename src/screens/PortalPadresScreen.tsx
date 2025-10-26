@@ -12,7 +12,7 @@ interface PortalPadresScreenProps {
   navigation: PortalPadresScreenNavigationProp;
 }
 
-const PortalPadresScreen: React.FC<PortalPadresScreenProps> = ({ navigation }) => {
+const PortalPadresScreen: React.FC<PortalPadresScreenProps> = ({ navigation: _navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Portal de Padres</Text>
