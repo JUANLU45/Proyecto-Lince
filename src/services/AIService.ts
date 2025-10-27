@@ -93,7 +93,6 @@ class AIService {
         nivelEngagement: number;
       };
     } catch (error) {
-      console.error('Error analizando patrón:', error);
       this.procesamientoActivo.procesando = false;
       this.procesamientoActivo.error = 'Error al analizar patrón';
 
@@ -132,8 +131,6 @@ class AIService {
 
       return resultado.data as SugerenciaIA;
     } catch (error) {
-      console.error('Error generando sugerencia:', error);
-
       // Fallback: Sugerencia básica si frustración alta
       if (contexto.nivelFrustracion >= this.configuracion.umbralesFrustracion.alto) {
         return this.generarSugerenciaFallback(perfilId, contexto);
@@ -171,7 +168,6 @@ class AIService {
 
       return 'mantener';
     } catch (error) {
-      console.error('Error adaptando dificultad:', error);
       return 'mantener';
     }
   }
@@ -196,7 +192,6 @@ class AIService {
 
       return resultado.data as InsightPadres[];
     } catch (error) {
-      console.error('Error generando insights:', error);
       return [];
     }
   }
@@ -233,7 +228,6 @@ class AIService {
 
       return resultado.data as PatronInteraccion;
     } catch (error) {
-      console.error('Error procesando análisis multimodal:', error);
       this.procesamientoActivo.procesando = false;
       this.procesamientoActivo.error = 'Error en procesamiento multimodal';
 

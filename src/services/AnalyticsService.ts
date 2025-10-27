@@ -48,7 +48,7 @@ class AnalyticsService {
         timestamp: Date.now(),
       });
     } catch (error) {
-      console.error('Error logging actividad iniciada:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -73,7 +73,7 @@ class AnalyticsService {
         timestamp: Date.now(),
       });
     } catch (error) {
-      console.error('Error logging actividad completada:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -104,7 +104,7 @@ class AnalyticsService {
         });
       }
     } catch (error) {
-      console.error('Error logging interacción:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -123,7 +123,7 @@ class AnalyticsService {
         timestamp: Date.now(),
       });
     } catch (error) {
-      console.error('Error logging progreso:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -147,7 +147,7 @@ class AnalyticsService {
         timestamp: Date.now(),
       });
     } catch (error) {
-      console.error('Error logging sugerencia IA:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -169,7 +169,7 @@ class AnalyticsService {
         timestamp: Date.now(),
       });
     } catch (error) {
-      console.error('Error logging rincón calma:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 
@@ -223,7 +223,7 @@ class AnalyticsService {
       await analytics().setUserProperty('nivel_desarrollo', nivelDesarrollo);
       await analytics().setUserId(perfilId); // ID anonimizado
     } catch (error) {
-      console.error('Error setting user properties:', error);
+      // Error silencioso en analytics - no afecta funcionalidad
     }
   }
 

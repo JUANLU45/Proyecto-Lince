@@ -60,7 +60,6 @@ class FirebaseService {
 
       this.initialized = true;
     } catch (error) {
-      console.error('Error inicializando Firebase:', error);
       throw new Error('No se pudo inicializar Firebase');
     }
   }
