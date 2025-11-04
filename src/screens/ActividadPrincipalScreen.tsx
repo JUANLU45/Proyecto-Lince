@@ -152,8 +152,9 @@ function ActividadPrincipalScreen() {
 
         {mostrarFeedback && (
           <FeedbackVisual
-            tipo="excelente"
-            mensaje={strings.actividades.feedback.excelente}
+            tipo="celebración"
+            posicion={{ x: 0, y: 0 }}
+            visible={true}
           />
         )}
       </View>
@@ -161,7 +162,7 @@ function ActividadPrincipalScreen() {
       {sugerenciaActiva && (
         <View style={styles.sugerenciaContainer}>
           <Text style={styles.sugerenciaTexto}>
-            💡 {sugerenciaActiva.mensaje}
+            💡 {sugerenciaActiva.descripcion}
           </Text>
         </View>
       )}

@@ -23,9 +23,9 @@ import { Actividad, NivelDificultad } from '../types';
 import { FirebaseService } from '../services';
 
 const DIFICULTAD_COLORES: Record<NivelDificultad, string> = {
-  facil: theme.colors.verdeJungla,
-  medio: theme.colors.amarilloSol,
-  dificil: theme.colors.rojoPeligro,
+  básico: theme.colors.verdeJungla,
+  intermedio: theme.colors.amarilloSol,
+  avanzado: theme.colors.rojoPeligro,
 };
 
 function VistaIslaScreen() {

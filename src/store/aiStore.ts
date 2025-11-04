@@ -22,11 +22,13 @@ import type {
 interface AIState {
   // Estado de sugerencias
   sugerenciaActual: SugerenciaIA | null;
+  sugerenciaActiva: SugerenciaIA | null; // Alias para compatibilidad
   historialSugerencias: SugerenciaIA[];
   sugerenciaVisible: boolean;
 
   // Estado de insights
   insightsPendientes: InsightPadres[];
+  insights: InsightPadres[]; // Alias para compatibilidad
   insightsLeidos: string[]; // IDs de insights ya leídos
 
   // Estado de procesamiento
@@ -103,8 +105,16 @@ const estadoInicial = {
  * Store de Zustand para IA
  * Según PROJECT_REQUIREMENTS.md RF-IA-002: Sugerencias proactivas
  */
-export const useAIStore = create<AIState>((set) => ({
+export const useAIStore = create<AIState>((set, get) => ({
   ...estadoInicial,
+
+  // Getters para aliases de compatibilidad
+  get sugerenciaActiva() {
+    return get().sugerenciaActual;
+  },
+  get insights() {
+    return get().insightsPendientes;
+  },
 
   // Establece la sugerencia actual
   // Según PROJECT_REQUIREMENTS.md RF-IA-002: Sugerencias proactivas

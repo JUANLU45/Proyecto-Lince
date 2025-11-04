@@ -40,7 +40,7 @@ export default function App() {
   const initializeApp = async () => {
     try {
       // Inicializar Firebase (obligatorio)
-      await FirebaseService.getInstance().initialize();
+      await FirebaseService.initialize();
 
       // App lista para usar
       setIsReady(true);

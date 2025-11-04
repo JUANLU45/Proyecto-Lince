@@ -22,14 +22,17 @@ export type EstadoActividad = 'no_iniciada' | 'en_progreso' | 'pausada' | 'compl
 export interface Actividad {
   id: string;
   nombre: string;
+  titulo: string; // Alias para nombre (usado en UI)
   descripcion: string;
   isla: TipoIsla;
+  tipoIsla: TipoIsla; // Alias para isla (usado en UI)
   dificultad: NivelDificultad;
   duracionEstimada: number; // en minutos
   miniatura: string;
   objetivoTerapeutico: string;
   habilidadesDesarrolladas: string[];
   requiereConexion: boolean;
+  completada?: boolean; // Si el usuario la ha completado
 }
 
 // Sesión de actividad
@@ -76,10 +79,13 @@ export interface ActividadContainerProps extends BaseProps {
 
 // Props del área interactiva
 export interface AreaInteractivaProps extends BaseProps {
-  onTouch: (x: number, y: number) => void;
+  onTouch?: (x: number, y: number) => void;
+  onInteraccion?: () => void; // Alias simple sin coordenadas
   onGesture?: (tipo: string) => void;
-  sensibilidad: number; // 0-100
+  sensibilidad?: number; // 0-100
   children?: ReactNode;
+  colorFondo?: string;
+  mostrarFeedback?: boolean;
 }
 
 // Props del feedback visual

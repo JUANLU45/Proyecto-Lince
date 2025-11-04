@@ -27,7 +27,7 @@ function PanelAdminScreen() {
 
   useEffect(() => {
     const verificarPermiso = async () => {
-      if (perfilNiño) {
+      if (perfilNiño && perfilNiño.uid) {
         const resultado = await FirebaseService.verificarPermisoAdmin(perfilNiño.uid);
         if (resultado.success && resultado.data) {
           setTienePermiso(resultado.data);
@@ -58,7 +58,11 @@ function PanelAdminScreen() {
           </Text>
         </View>
 
-        <PermisoAdmin />
+        <PermisoAdmin tienePermiso={false}>
+          <Text style={styles.textoInfo}>
+            No tienes permisos de administrador
+          </Text>
+        </PermisoAdmin>
       </View>
     );
   }
@@ -83,14 +87,23 @@ function PanelAdminScreen() {
           <Text style={styles.seccionTitulo}>
             {strings.portalPadres.admin.metricas}
           </Text>
-          <DashboardAdmin />
+          <DashboardAdmin
+            usuariosActivos={0}
+            usuariosTotales={0}
+            accesoRapido={[]}
+          />
         </View>
 
         <View style={styles.seccion}>
           <Text style={styles.seccionTitulo}>
             {strings.portalPadres.admin.banners}
           </Text>
-          <GestionBanners />
+          <GestionBanners
+            banner={{ id: '1', titulo: 'Banner', activo: true, fechaCreacion: new Date() }}
+            onEditar={() => {}}
+            onEliminar={() => {}}
+            onToggleActivo={() => {}}
+          />
         </View>
 
         <View style={styles.seccion}>

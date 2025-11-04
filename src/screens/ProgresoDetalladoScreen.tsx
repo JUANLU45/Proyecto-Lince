@@ -74,8 +74,12 @@ function ProgresoDetalladoScreen() {
                 Actividades esta semana
               </Text>
               <GraficoProgreso
-                datos={progreso.graficoSemanal || []}
-                tipo="barras"
+                titulo="Actividades"
+                datos={{
+                  tipo: 'barra',
+                  etiquetas: ['L', 'M', 'X', 'J', 'V', 'S', 'D'],
+                  valores: progreso.graficoSemanal || [0, 0, 0, 0, 0, 0, 0],
+                }}
               />
             </View>
 
@@ -84,8 +88,13 @@ function ProgresoDetalladoScreen() {
                 Tiempo por isla
               </Text>
               <GraficoProgreso
-                datos={progreso.tiempoPorIsla || []}
-                tipo="pastel"
+                titulo="Tiempo"
+                datos={{
+                  tipo: 'circular',
+                  etiquetas: ['Movimiento', 'Musical', 'Táctil', 'Visual', 'Calma'],
+                  valores: Object.values(progreso.tiempoPorIsla || {}),
+                  unidad: 'minutos',
+                }}
               />
             </View>
 
@@ -141,10 +150,10 @@ function ProgresoDetalladoScreen() {
                 {progreso.islasFavoritas?.map((isla, index) => (
                   <View key={index} style={styles.islaFavorita}>
                     <Text style={styles.islaFavoritaNombre}>
-                      {index + 1}. {isla.nombre}
+                      {index + 1}. {isla}
                     </Text>
                     <Text style={styles.islaFavoritaValor}>
-                      {isla.completadas} actividades
+                      Isla favorita
                     </Text>
                   </View>
                 )) || (

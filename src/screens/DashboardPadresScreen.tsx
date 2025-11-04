@@ -120,6 +120,9 @@ function DashboardPadresScreen() {
                 actividadesCompletadas={progreso?.actividadesSemana || 0}
                 tiempoTotal={progreso?.tiempoSemana || 0}
                 rachaDias={progreso?.rachaActual || 0}
+                logrosObtenidos={0}
+                fechaInicio={new Date()}
+                fechaFin={new Date()}
               />
             </View>
 
@@ -132,7 +135,7 @@ function DashboardPadresScreen() {
                   {insights.slice(0, 3).map((insight, index) => (
                     <View key={index} style={styles.insightCard}>
                       <Text style={styles.insightTitulo}>{insight.titulo}</Text>
-                      <Text style={styles.insightMensaje}>{insight.mensaje}</Text>
+                      <Text style={styles.insightMensaje}>{insight.resumen}</Text>
                     </View>
                   ))}
                 </View>
@@ -147,7 +150,12 @@ function DashboardPadresScreen() {
               <Text style={styles.seccionTitulo}>
                 {strings.portalPadres.misionesReales.titulo}
               </Text>
-              <MisionMundoReal />
+              <MisionMundoReal
+                id="mision-1"
+                titulo="Misión del día"
+                descripcion="Completar una actividad sensorial"
+                estado="pendiente"
+              />
             </View>
 
             <View style={styles.botonesAccion}>
