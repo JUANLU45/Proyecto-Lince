@@ -21,6 +21,7 @@ import type {
 interface PerfilState {
   // Estado
   perfilActual: PerfilNiño | null;
+  perfilNiño: PerfilNiño | null; // Alias para compatibilidad
   perfilesPadre: PerfilPadre | null;
   progreso: ProgresoNiño | null;
   configuracion: ConfiguracionPerfil | null;
@@ -29,6 +30,7 @@ interface PerfilState {
 
   // Acciones para perfiles de niño
   setPerfilActual: (perfil: PerfilNiño) => void;
+  setPerfilNiño: (perfil: PerfilNiño) => void; // Alias para compatibilidad
   actualizarPerfil: (datosActualizados: Partial<PerfilNiño>) => void;
   limpiarPerfil: () => void;
 
@@ -67,11 +69,19 @@ const estadoInicial = {
  * Store de Zustand para perfiles
  * Según TECHNOLOGY.md: Zustand para gestión de estado centralizada
  */
-export const usePerfilStore = create<PerfilState>((set) => ({
+export const usePerfilStore = create<PerfilState>((set, get) => ({
   ...estadoInicial,
+
+  // Getter alias para perfilNiño
+  get perfilNiño() {
+    return get().perfilActual;
+  },
 
   // Establece el perfil actual del niño
   setPerfilActual: (perfil) => set({ perfilActual: perfil, error: null }),
+
+  // Alias para compatibilidad
+  setPerfilNiño: (perfil) => set({ perfilActual: perfil, error: null }),
 
   // Actualiza datos del perfil actual
   // Según PROJECT_REQUIREMENTS.md RF-001: Perfiles personalizados por niño

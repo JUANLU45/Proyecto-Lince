@@ -24,6 +24,7 @@ import type { AreaInteractivaProps } from '../../types';
  */
 const AreaInteractiva: React.FC<AreaInteractivaProps> = ({
   onTouch,
+  onInteraccion,
   children,
   testID,
   accessible = true,
@@ -32,8 +33,13 @@ const AreaInteractiva: React.FC<AreaInteractivaProps> = ({
 }) => {
   const handleTouch = useCallback((event: GestureResponderEvent) => {
     const { locationX, locationY } = event.nativeEvent;
-    onTouch(locationX, locationY);
-  }, [onTouch]);
+    if (onTouch) {
+      onTouch(locationX, locationY);
+    }
+    if (onInteraccion) {
+      onInteraccion();
+    }
+  }, [onTouch, onInteraccion]);
 
   return (
     <View

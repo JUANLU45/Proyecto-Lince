@@ -85,6 +85,9 @@ export const strings = {
     continuar: 'Continuar',
     terminar: 'Terminar',
     volverIntentar: 'Volver a intentar',
+    vistaPrevia: 'Vista previa',
+    completada: '✓ Completada',
+    noActividades: 'No hay actividades disponibles',
 
     // Botones de configuración
     configuracion: {
@@ -115,6 +118,7 @@ export const strings = {
     instruccion: 'Sigue a Leo',
     listo: 'Ya estoy mejor',
     quedarse: 'Quedarme un poco más',
+    respira: 'Respira',
   },
 
   // ========================================
@@ -129,6 +133,7 @@ export const strings = {
     estrellas: 'estrellas',
     insignia: 'insignia nueva',
     continuar: 'Continuar',
+    tiempo: 'Tiempo',
   },
 
   // ========================================

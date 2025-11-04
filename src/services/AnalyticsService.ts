@@ -238,6 +238,74 @@ class AnalyticsService {
     if (edad < 11) return '9-10';
     return '11-12';
   }
+
+  /**
+   * ========================================
+   * ALIASES PARA COMPATIBILIDAD
+   * ========================================
+   */
+
+  /**
+   * Alias para registrar inicio de actividad
+   */
+  public async registrarInicioActividad(datos: {
+    actividadId: string;
+    timestamp: Date;
+  }): Promise<void> {
+    try {
+      const analytics = FirebaseService.getAnalytics();
+      await analytics().logEvent('actividad_iniciada', {
+        actividad_id: datos.actividadId,
+        timestamp: datos.timestamp.getTime(),
+      });
+    } catch (error) {
+      console.error('Error registrando inicio actividad:', error);
+    }
+  }
+
+  /**
+   * Alias para registrar interacción
+   */
+  public async registrarInteraccion(datos: {
+    actividadId: string;
+    tipoInteraccion: string;
+    timestamp: Date;
+    precision: number;
+  }): Promise<void> {
+    try {
+      const analytics = FirebaseService.getAnalytics();
+      await analytics().logEvent('interaccion_usuario', {
+        actividad_id: datos.actividadId,
+        tipo: datos.tipoInteraccion,
+        precision: datos.precision,
+        timestamp: datos.timestamp.getTime(),
+      });
+    } catch (error) {
+      console.error('Error registrando interacción:', error);
+    }
+  }
+
+  /**
+   * Alias para registrar completación de actividad
+   */
+  public async registrarCompletacionActividad(datos: {
+    actividadId: string;
+    estrellas: number;
+    tiempoCompletado: number;
+    timestamp: Date;
+  }): Promise<void> {
+    try {
+      const analytics = FirebaseService.getAnalytics();
+      await analytics().logEvent('actividad_completada', {
+        actividad_id: datos.actividadId,
+        estrellas: datos.estrellas,
+        tiempo_completado: datos.tiempoCompletado,
+        timestamp: datos.timestamp.getTime(),
+      });
+    } catch (error) {
+      console.error('Error registrando completación:', error);
+    }
+  }
 }
 
 export default AnalyticsService.getInstance();

@@ -32,6 +32,7 @@ interface BotonSecundarioProps extends BaseProps {
   readonly icono?: string;
   readonly deshabilitado?: boolean;
   readonly variante?: 'ghost' | 'outline' | 'subtle';
+  readonly tamaño?: 'pequeño' | 'mediano' | 'grande';
 }
 
 /**
@@ -44,6 +45,7 @@ const BotonSecundario: React.FC<BotonSecundarioProps> = ({
   icono,
   deshabilitado = false,
   variante = 'outline',
+  tamaño = 'mediano',
   testID,
   accessible = true,
   accessibilityLabel,
