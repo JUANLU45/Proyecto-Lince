@@ -6,31 +6,21 @@
  * para garantizar type-safety en la navegación.
  */
 
-import { TipoIsla, NivelDificultad } from '../types';
-
-// ========================================
-// ROOT NAVIGATOR (Stack principal)
-// ========================================
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RouteProp } from '@react-navigation/native';
+import { CardStyleInterpolators } from '@react-navigation/stack';
+import { TipoIsla, NivelDificultad, DuracionActividad } from '../types';
 
 export type RootStackParamList = {
-  // Flujo inicial
   Splash: undefined;
   Welcome: undefined;
   Tutorial: undefined;
-
-  // Flujo principal de la app
   App: undefined;
 };
 
-// ========================================
-// APP NAVIGATOR (Flujo principal de la aplicación)
-// ========================================
-
 export type AppStackParamList = {
-  // Hub central
   MainMap: undefined;
 
-  // Flujo de islas y actividades
   Island: {
     islandType: TipoIsla;
   };
@@ -45,11 +35,10 @@ export type AppStackParamList = {
 
   Activity: {
     activityId: string;
-    duracion?: 'corta' | 'normal' | 'larga';
+    duracion?: DuracionActividad;
     nivel?: NivelDificultad;
   };
 
-  // Flujo de recompensas y calma
   Reward: {
     activityId: string;
     stars: number;
@@ -60,7 +49,6 @@ export type AppStackParamList = {
     triggeredBy?: 'ai' | 'user' | 'auto';
   };
 
-  // Portal de padres
   ParentDashboard: undefined;
 
   ProgressDetail: {
@@ -69,67 +57,47 @@ export type AppStackParamList = {
 
   AIsuggestions: undefined;
 
-  // Configuración
   Settings: undefined;
 };
 
-// ========================================
-// TIPOS DE NAVEGACIÓN (Para uso en componentes)
-// ========================================
-
-import { StackNavigationProp } from '@react-navigation/stack';
-import { RouteProp } from '@react-navigation/native';
-
-// Root Navigator
 export type RootNavigationProp = StackNavigationProp<RootStackParamList>;
 export type RootRouteProp<T extends keyof RootStackParamList> = RouteProp<
   RootStackParamList,
   T
 >;
 
-// App Navigator
 export type AppNavigationProp = StackNavigationProp<AppStackParamList>;
 export type AppRouteProp<T extends keyof AppStackParamList> = RouteProp<
   AppStackParamList,
   T
 >;
 
-// ========================================
-// TIPOS ESPECÍFICOS POR PANTALLA
-// ========================================
-
-// Splash Screen
 export type SplashScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   'Splash'
 >;
 
-// Welcome Screen
 export type WelcomeScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   'Welcome'
 >;
 
-// Tutorial Screen
 export type TutorialScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   'Tutorial'
 >;
 
-// MainMap Screen
 export type MainMapScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'MainMap'
 >;
 
-// Island Screen
 export type IslandScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'Island'
 >;
 export type IslandScreenRouteProp = RouteProp<AppStackParamList, 'Island'>;
 
-// PreActivity Screen
 export type PreActivityScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'PreActivity'
@@ -139,7 +107,6 @@ export type PreActivityScreenRouteProp = RouteProp<
   'PreActivity'
 >;
 
-// VideoModeling Screen
 export type VideoModelingScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'VideoModeling'
@@ -149,21 +116,18 @@ export type VideoModelingScreenRouteProp = RouteProp<
   'VideoModeling'
 >;
 
-// Activity Screen
 export type ActivityScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'Activity'
 >;
 export type ActivityScreenRouteProp = RouteProp<AppStackParamList, 'Activity'>;
 
-// Reward Screen
 export type RewardScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'Reward'
 >;
 export type RewardScreenRouteProp = RouteProp<AppStackParamList, 'Reward'>;
 
-// CalmCorner Screen
 export type CalmCornerScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'CalmCorner'
@@ -173,13 +137,11 @@ export type CalmCornerScreenRouteProp = RouteProp<
   'CalmCorner'
 >;
 
-// ParentDashboard Screen
 export type ParentDashboardScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'ParentDashboard'
 >;
 
-// ProgressDetail Screen
 export type ProgressDetailScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'ProgressDetail'
@@ -189,33 +151,22 @@ export type ProgressDetailScreenRouteProp = RouteProp<
   'ProgressDetail'
 >;
 
-// AISuggestions Screen
 export type AISuggestionsScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'AIsuggestions'
 >;
 
-// Settings Screen
 export type SettingsScreenNavigationProp = StackNavigationProp<
   AppStackParamList,
   'Settings'
 >;
 
-// ========================================
-// OPCIONES DE NAVEGACIÓN COMUNES
-// ========================================
-
 export const defaultScreenOptions = {
   headerShown: false,
   gestureEnabled: true,
-  cardStyleInterpolator: ({ current: { progress } }: any) => ({
-    cardStyle: {
-      opacity: progress,
-    },
-  }),
+  cardStyleInterpolator: CardStyleInterpolators.forFadeFromCenter,
 };
 
-// Opciones de animación suaves para niños
 export const gentleScreenOptions = {
   ...defaultScreenOptions,
   animationEnabled: true,

@@ -28,6 +28,7 @@ export const strings = {
 
   splash: {
     loading: 'Cargando...',
+    subtitulo: 'con Leo el Lince',
   },
 
   bienvenida: {
@@ -41,6 +42,28 @@ export const strings = {
     siguiente: 'Siguiente',
     saltar: 'Saltar tutorial',
     finalizar: '¡Entendido!',
+    pasos: {
+      bienvenida: {
+        titulo: '¡Bienvenido!',
+        descripcion: 'Soy Leo el Lince y voy a ser tu amigo',
+        instruccion: 'Toca la pantalla para continuar',
+      },
+      tocar: {
+        titulo: 'Toca para jugar',
+        descripcion: 'Puedes tocar cualquier parte de la pantalla',
+        instruccion: 'Practica tocando aquí',
+      },
+      muyBien: {
+        titulo: '¡Muy bien!',
+        descripcion: 'Así ganamos estrellas y celebramos juntos',
+        instruccion: 'Toca para continuar',
+      },
+      listo: {
+        titulo: '¡Listo para empezar!',
+        descripcion: 'Vamos a explorar mi mundo',
+        instruccion: 'Toca para comenzar',
+      },
+    },
   },
 
   // ========================================
@@ -85,6 +108,16 @@ export const strings = {
     continuar: 'Continuar',
     terminar: 'Terminar',
     volverIntentar: 'Volver a intentar',
+    nombreGenerico: 'Nombre de la Actividad',
+    descripcionGenerico: 'Descripción de la actividad',
+    actividadNumero: 'Actividad',
+    tocarPantalla: '¡Toca la pantalla!',
+
+    // Niveles de dificultad
+    nivelBasico: 'Básico',
+    nivelIntermedio: 'Intermedio',
+    nivelAvanzado: 'Avanzado',
+    nivel: 'Nivel',
 
     // Botones de configuración
     configuracion: {
@@ -103,6 +136,17 @@ export const strings = {
       loLograste: '¡Lo lograste!',
       intenta: '¡Inténtalo de nuevo!',
     },
+  },
+
+  // ========================================
+  // VIDEO MODELADO
+  // ========================================
+
+  videoModeling: {
+    leoMuestra: 'Leo te muestra cómo jugar',
+    comoJugar: '¿Cómo jugar?',
+    instrucciones: '1. Toca la pantalla\n2. Mira a Leo saltar\n3. ¡Diviértete!',
+    leoExplica: 'Leo explicando qué van a hacer',
   },
 
   // ========================================
@@ -146,6 +190,15 @@ export const strings = {
       actividadesCompletadas: 'Actividades completadas',
       rachaActual: 'Racha actual',
       dias: 'días',
+      general: 'Progreso General',
+      completadoUltimasSemanas: 'Completado en las últimas 4 semanas',
+    },
+
+    progressDetail: {
+      titulo: 'Progreso Detallado',
+      porIsla: 'Por Isla Temática',
+      actividadesRecientes: 'Actividades Recientes',
+      exportar: 'Exportar Reporte',
     },
 
     resumenSemanal: {
@@ -266,6 +319,7 @@ export const strings = {
 
   configuracion: {
     titulo: 'Configuración',
+    nivelDesarrollo: 'Nivel de desarrollo',
     perfil: {
       titulo: 'Perfil',
       nombre: 'Nombre',
@@ -277,6 +331,14 @@ export const strings = {
       volumen: 'Volumen',
       notificaciones: 'Notificaciones',
       modoOscuro: 'Modo oscuro',
+    },
+    objetivosTerapeuticos: {
+      titulo: 'Objetivos Terapéuticos',
+      descripcion: 'Configura los objetivos terapéuticos específicos en consulta con el terapeuta ocupacional.',
+    },
+    ayuda: {
+      centroAyuda: 'Centro de ayuda',
+      contactarSoporte: 'Contactar soporte',
     },
     guardar: 'Guardar cambios',
     cancelar: 'Cancelar',
