@@ -86,7 +86,7 @@ const SettingsScreen: React.FC = () => {
               style={styles.input}
               value={nombre}
               onChangeText={setNombre}
-              placeholder="Nombre"
+              placeholder={strings.configuracion.perfil.placeholderNombre}
               placeholderTextColor={theme.colors.grisOscuro}
               accessible={true}
               accessibilityLabel={strings.configuracion.perfil.nombre}
@@ -101,7 +101,7 @@ const SettingsScreen: React.FC = () => {
               style={styles.input}
               value={edad}
               onChangeText={setEdad}
-              placeholder="Edad"
+              placeholder={strings.configuracion.perfil.placeholderEdad}
               keyboardType="number-pad"
               placeholderTextColor={theme.colors.grisOscuro}
               accessible={true}
@@ -149,8 +149,7 @@ const SettingsScreen: React.FC = () => {
 
           <View style={styles.infoCard}>
             <Text style={styles.infoText}>
-              Configura los objetivos terapéuticos específicos en consulta con
-              el terapeuta ocupacional.
+              {strings.configuracion.objetivosTerapeuticos.descripcion}
             </Text>
           </View>
         </View>
@@ -164,19 +163,19 @@ const SettingsScreen: React.FC = () => {
           <TouchableOpacity
             style={styles.helpButton}
             accessible={true}
-            accessibilityLabel="Centro de ayuda"
+            accessibilityLabel={strings.configuracion.ayuda.centroAyuda}
             accessibilityRole="button"
           >
-            <Text style={styles.helpButtonText}>📚 Centro de ayuda</Text>
+            <Text style={styles.helpButtonText}>📚 {strings.configuracion.ayuda.centroAyuda}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.helpButton}
             accessible={true}
-            accessibilityLabel="Contactar soporte"
+            accessibilityLabel={strings.configuracion.ayuda.contactarSoporte}
             accessibilityRole="button"
           >
-            <Text style={styles.helpButtonText}>📧 Contactar soporte</Text>
+            <Text style={styles.helpButtonText}>📧 {strings.configuracion.ayuda.contactarSoporte}</Text>
           </TouchableOpacity>
         </View>
 

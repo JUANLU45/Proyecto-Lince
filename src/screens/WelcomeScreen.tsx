@@ -92,7 +92,7 @@ const WelcomeScreen: React.FC = () => {
               style={styles.input}
               value={nombre}
               onChangeText={setNombre}
-              placeholder="Nombre del niño"
+              placeholder={strings.configuracion.perfil.placeholderNombreNino}
               placeholderTextColor={theme.colors.grisOscuro}
               accessible={true}
               accessibilityLabel={strings.configuracion.perfil.nombre}
@@ -109,7 +109,7 @@ const WelcomeScreen: React.FC = () => {
               style={styles.input}
               value={edad}
               onChangeText={setEdad}
-              placeholder="Edad"
+              placeholder={strings.configuracion.perfil.placeholderEdad}
               placeholderTextColor={theme.colors.grisOscuro}
               keyboardType="number-pad"
               accessible={true}
@@ -119,7 +119,7 @@ const WelcomeScreen: React.FC = () => {
 
           {/* Nivel de desarrollo */}
           <View style={styles.formGroup}>
-            <Text style={styles.label}>Nivel de desarrollo</Text>
+            <Text style={styles.label}>{strings.configuracion.nivelDesarrollo}</Text>
             <View style={styles.nivelContainer}>
               {(['básico', 'intermedio', 'avanzado'] as NivelDesarrollo[]).map(
                 (nivelOption) => (

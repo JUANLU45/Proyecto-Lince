@@ -105,15 +105,15 @@ const IslandScreen: React.FC = () => {
 
               <View style={styles.activityInfo}>
                 <Text style={styles.activityTitle}>
-                  Actividad {index}
+                  {strings.actividades.actividadNumero} {index}
                 </Text>
                 <Text style={styles.activityDescription}>
-                  Descripción de la actividad
+                  {strings.actividades.descripcionGenerico}
                 </Text>
 
                 <View style={styles.activityMeta}>
                   <View style={styles.badge}>
-                    <Text style={styles.badgeText}>Básico</Text>
+                    <Text style={styles.badgeText}>{strings.actividades.nivelBasico}</Text>
                   </View>
                   <Text style={styles.timeText}>
                     {strings.common.tiempoEstimado}: 5 {strings.tiempo.minutos}

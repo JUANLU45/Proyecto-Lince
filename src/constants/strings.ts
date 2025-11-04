@@ -263,6 +263,10 @@ export const strings = {
       sugerencia: 'Sugerencia',
       alerta: 'Atención',
       celebracion: '¡Celebración!',
+      infoAnalisis: 'La IA analiza los patrones de interacción y genera sugerencias personalizadas basadas en el comportamiento y progreso.',
+      ejemploCelebracion: 'Ha completado 5 días consecutivos de actividades',
+      ejemploProgreso: 'Mejora notable en actividades de movimiento',
+      ejemploSugerencia: 'Considera actividades musicales en las mañanas',
     },
   },
 
@@ -325,6 +329,9 @@ export const strings = {
       nombre: 'Nombre',
       edad: 'Edad',
       foto: 'Foto de perfil',
+      placeholderNombre: 'Nombre',
+      placeholderEdad: 'Edad',
+      placeholderNombreNino: 'Nombre del niño',
     },
     preferencias: {
       titulo: 'Preferencias',

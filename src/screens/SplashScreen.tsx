@@ -47,8 +47,6 @@ const SplashScreen: React.FC = () => {
 
       if (currentProgress >= 100) {
         clearInterval(interval);
-        // TODO: Verificar si es primera vez o no
-        // Por ahora siempre ir a Welcome
         setTimeout(() => {
           navigation.replace('Welcome');
         }, 500);
@@ -68,7 +66,7 @@ const SplashScreen: React.FC = () => {
         {/* Logo y título */}
         <View style={styles.logoContainer}>
           <Text style={styles.title}>Proyecto Lince</Text>
-          <Text style={styles.subtitle}>con Leo el Lince</Text>
+          <Text style={styles.subtitle}>{strings.splash.subtitulo}</Text>
         </View>
 
         {/* Barra de progreso */}

@@ -35,24 +35,24 @@ interface TutorialStep {
 
 const tutorialSteps: TutorialStep[] = [
   {
-    titulo: '¡Bienvenido!',
-    descripcion: 'Soy Leo el Lince y voy a ser tu amigo',
-    instruccion: 'Toca la pantalla para continuar',
+    titulo: strings.tutorial.pasos.bienvenida.titulo,
+    descripcion: strings.tutorial.pasos.bienvenida.descripcion,
+    instruccion: strings.tutorial.pasos.bienvenida.instruccion,
   },
   {
-    titulo: 'Toca para jugar',
-    descripcion: 'Puedes tocar cualquier parte de la pantalla',
-    instruccion: 'Practica tocando aquí',
+    titulo: strings.tutorial.pasos.tocar.titulo,
+    descripcion: strings.tutorial.pasos.tocar.descripcion,
+    instruccion: strings.tutorial.pasos.tocar.instruccion,
   },
   {
-    titulo: '¡Muy bien!',
-    descripcion: 'Así ganamos estrellas y celebramos juntos',
-    instruccion: 'Toca para continuar',
+    titulo: strings.tutorial.pasos.muyBien.titulo,
+    descripcion: strings.tutorial.pasos.muyBien.descripcion,
+    instruccion: strings.tutorial.pasos.muyBien.instruccion,
   },
   {
-    titulo: '¡Listo para empezar!',
-    descripcion: 'Vamos a explorar mi mundo',
-    instruccion: 'Toca para comenzar',
+    titulo: strings.tutorial.pasos.listo.titulo,
+    descripcion: strings.tutorial.pasos.listo.descripcion,
+    instruccion: strings.tutorial.pasos.listo.instruccion,
   },
 ];
 

@@ -1,19 +1,12 @@
 /**
  * AppNavigator - Navegador principal de la aplicación
  * Basado en: APP_BLUEPRINT.md
- *
- * Flujo completo de la aplicación:
- * - MainMap (Hub central)
- * - Islas y actividades
- * - Portal de padres
- * - Configuración
  */
 
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { AppStackParamList, gentleScreenOptions } from './types';
 
-// Screens - serán importadas cuando se implementen
 import MainMapScreen from '../screens/MainMapScreen';
 import IslandScreen from '../screens/IslandScreen';
 import PreActivityScreen from '../screens/PreActivityScreen';
@@ -34,17 +27,15 @@ const AppNavigator: React.FC = () => {
       initialRouteName="MainMap"
       screenOptions={gentleScreenOptions}
     >
-      {/* Hub Central - Mapa del Mundo de Leo */}
       <Stack.Screen
         name="MainMap"
         component={MainMapScreen}
         options={{
           headerShown: false,
-          gestureEnabled: false, // No permitir swipe back desde mapa principal
+          gestureEnabled: false,
         }}
       />
 
-      {/* Flujo de Islas y Actividades */}
       <Stack.Screen
         name="Island"
         component={IslandScreen}
@@ -74,17 +65,16 @@ const AppNavigator: React.FC = () => {
         component={ActivityScreen}
         options={{
           headerShown: false,
-          gestureEnabled: false, // No permitir swipe back durante actividad
+          gestureEnabled: false,
         }}
       />
 
-      {/* Recompensas y Calma */}
       <Stack.Screen
         name="Reward"
         component={RewardScreen}
         options={{
           headerShown: false,
-          gestureEnabled: false, // No permitir salir hasta terminar animación
+          gestureEnabled: false,
         }}
       />
 
@@ -93,11 +83,10 @@ const AppNavigator: React.FC = () => {
         component={CalmCornerScreen}
         options={{
           headerShown: false,
-          presentation: 'modal', // Presentación como modal para diferenciarlo
+          presentation: 'modal',
         }}
       />
 
-      {/* Portal de Padres */}
       <Stack.Screen
         name="ParentDashboard"
         component={ParentDashboardScreen}
@@ -122,7 +111,6 @@ const AppNavigator: React.FC = () => {
         }}
       />
 
-      {/* Configuración */}
       <Stack.Screen
         name="Settings"
         component={SettingsScreen}

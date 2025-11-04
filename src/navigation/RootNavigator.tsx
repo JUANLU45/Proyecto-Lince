@@ -1,21 +1,13 @@
 /**
  * RootNavigator - Navegador raíz de la aplicación
  * Basado en: APP_BLUEPRINT.md y DEVELOPMENT_PLAN.md
- *
- * Maneja el flujo inicial:
- * 1. Splash Screen (carga)
- * 2. Welcome Screen (primera vez)
- * 3. Tutorial Screen (opcional)
- * 4. App Navigator (aplicación principal)
  */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { RootStackParamList, gentleScreenOptions } from './types';
 
-// Screens - serán importadas cuando se implementen
-// Por ahora las declararemos como componentes placeholder que serán reemplazados
 import SplashScreen from '../screens/SplashScreen';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import TutorialScreen from '../screens/TutorialScreen';

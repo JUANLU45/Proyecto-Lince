@@ -62,9 +62,9 @@ const PreActivityScreen: React.FC = () => {
         {/* Vista previa de la actividad */}
         <View style={styles.previewContainer}>
           <Text style={styles.previewEmoji}>🎮</Text>
-          <Text style={styles.title}>Nombre de la Actividad</Text>
+          <Text style={styles.title}>{strings.actividades.nombreGenerico}</Text>
           <Text style={styles.description}>
-            Leo te va a mostrar cómo jugar a esta actividad
+            {strings.videoModeling.leoExplica}
           </Text>
         </View>
 

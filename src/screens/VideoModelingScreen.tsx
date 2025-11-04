@@ -50,16 +50,14 @@ const VideoModelingScreen: React.FC = () => {
         {/* Video simulado con Leo */}
         <View style={styles.videoContainer}>
           <Text style={styles.leoEmoji}>🦎</Text>
-          <Text style={styles.leoText}>Leo te muestra cómo jugar</Text>
+          <Text style={styles.leoText}>{strings.videoModeling.leoMuestra}</Text>
         </View>
 
         {/* Instrucciones */}
         <View style={styles.instructionsContainer}>
-          <Text style={styles.instructionTitle}>¿Cómo jugar?</Text>
+          <Text style={styles.instructionTitle}>{strings.videoModeling.comoJugar}</Text>
           <Text style={styles.instructionText}>
-            1. Toca la pantalla{'\n'}
-            2. Mira a Leo saltar{'\n'}
-            3. ¡Diviértete!
+            {strings.videoModeling.instrucciones}
           </Text>
         </View>
 

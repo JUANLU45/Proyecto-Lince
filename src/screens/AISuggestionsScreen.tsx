@@ -36,19 +36,19 @@ const suggestions: Suggestion[] = [
   {
     tipo: 'celebracion',
     titulo: strings.ia.insights.celebracion,
-    descripcion: 'Ha completado 5 días consecutivos de actividades',
+    descripcion: strings.ia.insights.ejemploCelebracion,
     fecha: strings.tiempo.hoy,
   },
   {
     tipo: 'progreso',
     titulo: strings.ia.insights.progreso,
-    descripcion: 'Mejora notable en actividades de movimiento',
+    descripcion: strings.ia.insights.ejemploProgreso,
     fecha: `${strings.tiempo.hace} 2 ${strings.tiempo.dias}`,
   },
   {
     tipo: 'sugerencia',
     titulo: strings.ia.insights.sugerencia,
-    descripcion: 'Considera actividades musicales en las mañanas',
+    descripcion: strings.ia.insights.ejemploSugerencia,
     fecha: `${strings.tiempo.hace} 3 ${strings.tiempo.dias}`,
   },
 ];
@@ -114,8 +114,7 @@ const AISuggestionsScreen: React.FC = () => {
         {/* Info sobre IA */}
         <View style={styles.infoCard}>
           <Text style={styles.infoText}>
-            La IA analiza los patrones de interacción y genera sugerencias
-            personalizadas basadas en el comportamiento y progreso.
+            {strings.ia.insights.infoAnalisis}
           </Text>
         </View>
 

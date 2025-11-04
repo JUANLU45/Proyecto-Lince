@@ -87,7 +87,7 @@ const ActivityScreen: React.FC = () => {
           <Text style={styles.leoEmoji}>🦎</Text>
           <Text style={styles.leoMessage}>
             {interacciones === 0
-              ? '¡Toca la pantalla!'
+              ? strings.actividades.tocarPantalla
               : strings.actividades.feedback.sigue}
           </Text>
         </View>

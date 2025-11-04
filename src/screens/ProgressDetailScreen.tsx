@@ -38,7 +38,6 @@ const ProgressDetailScreen: React.FC = () => {
   };
 
   const handleExport = () => {
-    // TODO: Implementar exportación de reportes
   };
 
   return (
@@ -76,20 +75,20 @@ const ProgressDetailScreen: React.FC = () => {
       >
         {/* Progreso general */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Progreso General</Text>
+          <Text style={styles.sectionTitle}>{strings.portalPadres.progreso.general}</Text>
           <View style={styles.progressCard}>
             <View style={styles.progressCircle}>
               <Text style={styles.progressValue}>75%</Text>
             </View>
             <Text style={styles.progressText}>
-              Completado en las últimas 4 semanas
+              {strings.portalPadres.progreso.completadoUltimasSemanas}
             </Text>
           </View>
         </View>
 
         {/* Por isla */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Por Isla Temática</Text>
+          <Text style={styles.sectionTitle}>{strings.portalPadres.progressDetail.porIsla}</Text>
 
           {[
             { name: strings.mapa.islas.movimiento.nombre, progress: 80, color: theme.colors.verdeJungla },
@@ -113,7 +112,7 @@ const ProgressDetailScreen: React.FC = () => {
 
         {/* Actividades recientes */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Actividades Recientes</Text>
+          <Text style={styles.sectionTitle}>{strings.portalPadres.progressDetail.actividadesRecientes}</Text>
 
           {[1, 2, 3].map((index) => (
             <View key={index} style={styles.activityCard}>
