@@ -120,7 +120,7 @@ const ProgressDetailScreen: React.FC = () => {
                 <Text style={styles.activityIconText}>🎮</Text>
               </View>
               <View style={styles.activityInfo}>
-                <Text style={styles.activityName}>Actividad {index}</Text>
+                <Text style={styles.activityName}>{strings.actividades.actividadNumero} {index}</Text>
                 <Text style={styles.activityDate}>
                   {strings.tiempo.hace} 2 {strings.tiempo.dias}
                 </Text>

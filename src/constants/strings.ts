@@ -267,6 +267,7 @@ export const strings = {
       ejemploCelebracion: 'Ha completado 5 días consecutivos de actividades',
       ejemploProgreso: 'Mejora notable en actividades de movimiento',
       ejemploSugerencia: 'Considera actividades musicales en las mañanas',
+      progresandoBien: 'está progresando bien en actividades de movimiento',
     },
   },
 

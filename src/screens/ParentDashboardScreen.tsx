@@ -133,7 +133,7 @@ const ParentDashboardScreen: React.FC = () => {
             </Text>
           </View>
           <Text style={styles.insightsText}>
-            {perfilActual?.nombre} está progresando bien en actividades de movimiento
+            {perfilActual?.nombre} {strings.ia.insights.progresandoBien}
           </Text>
         </TouchableOpacity>
 
