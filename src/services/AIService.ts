@@ -319,6 +319,38 @@ class AIService {
       terapeuta: 'analistaGestos',
     };
   }
+
+  /**
+   * ========================================
+   * ALIAS PARA COMPATIBILIDAD
+   * ========================================
+   */
+
+  /**
+   * Analiza el comportamiento del usuario en una actividad
+   * Alias para analizarPatron adaptado a pantallas
+   */
+  public async analizarComportamiento(datos: {
+    actividadId: string;
+    interacciones: number;
+    tiempoTranscurrido: number;
+  }): Promise<void> {
+    try {
+      const patron: PatronInteraccion = {
+        tipo: 'interaccion',
+        datos: {
+          interacciones: datos.interacciones,
+          tiempoTranscurrido: datos.tiempoTranscurrido,
+        },
+        confianza: datos.interacciones > 10 ? 80 : 50,
+        timestamp: new Date(),
+      };
+
+      await this.analizarPatron(patron);
+    } catch (error) {
+      console.error('Error analizando comportamiento:', error);
+    }
+  }
 }
 
 export default AIService.getInstance();

@@ -102,7 +102,7 @@ function RinconCalmaScreen() {
                 { transform: [{ scale: escalaAnimada }] },
               ]}
             >
-              <Text style={styles.respiraTexto}>Respira</Text>
+              <Text style={styles.respiraTexto}>{strings.rinconCalma.respira}</Text>
             </Animated.View>
 
             <Text style={styles.instruccionRespiracion}>

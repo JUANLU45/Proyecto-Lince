@@ -97,7 +97,7 @@ function VistaIslaScreen() {
           ⏱ {item.duracionEstimada} {strings.tiempo.minutos}
         </Text>
         {item.completada && (
-          <Text style={styles.completada}>✓ Completada</Text>
+          <Text style={styles.completada}>{strings.actividades.completada}</Text>
         )}
       </View>
     </TouchableOpacity>
@@ -146,7 +146,7 @@ function VistaIslaScreen() {
           </View>
         ) : actividades.length === 0 ? (
           <View style={styles.centrado}>
-            <Text style={styles.textoInfo}>No hay actividades disponibles</Text>
+            <Text style={styles.textoInfo}>{strings.actividades.noActividades}</Text>
           </View>
         ) : (
           <FlatList

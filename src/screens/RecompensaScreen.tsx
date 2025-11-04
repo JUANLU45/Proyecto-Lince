@@ -98,7 +98,7 @@ function RecompensaScreen() {
 
         <View style={styles.estadisticas}>
           <View style={styles.estadisticaItem}>
-            <Text style={styles.estadisticaLabel}>Tiempo</Text>
+            <Text style={styles.estadisticaLabel}>{strings.recompensas.tiempo}</Text>
             <Text style={styles.estadisticaValor}>
               {Math.floor(tiempoCompletado / 60)}:{(tiempoCompletado % 60).toString().padStart(2, '0')}
             </Text>

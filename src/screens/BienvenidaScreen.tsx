@@ -21,7 +21,7 @@ import { theme, strings } from '../constants';
 import { BotonPrimario } from '../components/Common';
 import { usePerfilStore } from '../store';
 import { FirebaseService } from '../services';
-import { NivelDesarrollo, PreferenciasSensoriales } from '../types';
+import { NivelDesarrollo, PreferenciasSensoriales, PerfilNiño } from '../types';
 
 function BienvenidaScreen() {
   const navigation = useNavigation<BienvenidaNavigationProp>();

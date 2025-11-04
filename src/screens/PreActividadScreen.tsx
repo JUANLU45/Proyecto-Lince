@@ -71,7 +71,7 @@ function PreActividadScreen() {
       >
         <View style={styles.preview}>
           <View style={styles.previewIcono}>
-            <Text style={styles.previewTexto}>Vista previa</Text>
+            <Text style={styles.previewTexto}>{strings.actividades.vistaPrevia}</Text>
           </View>
         </View>
 

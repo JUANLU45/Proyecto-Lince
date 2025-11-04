@@ -32,7 +32,7 @@ function ActividadPrincipalScreen() {
   const [progreso, setProgreso] = useState(0);
   const [mostrarFeedback, setMostrarFeedback] = useState(false);
   const [tiempoInicio] = useState(Date.now());
-  const timerRef = useRef<NodeJS.Timeout>();
+  const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
   const sugerenciaActiva = useAIStore((state) => state.sugerenciaActiva);
 
