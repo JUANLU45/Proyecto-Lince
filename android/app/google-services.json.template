@@ -1,0 +1,33 @@
+{
+  "_comment": "TEMPLATE - Reemplazar con google-services.json real de Firebase Console",
+  "_instructions": "1. Ve a Firebase Console -> Project Settings -> Your apps -> Android",
+  "_instructions2": "2. Descarga google-services.json",
+  "_instructions3": "3. Reemplaza este archivo (elimina .template del nombre)",
+  "project_info": {
+    "project_number": "265659354964",
+    "project_id": "proyecto-lince-b61b6",
+    "storage_bucket": "proyecto-lince-b61b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "REEMPLAZAR_CON_TU_ANDROID_APP_ID",
+        "android_client_info": {
+          "package_name": "com.proyectolince.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIhZQY7jhteaCXOYAmI1Gkhd3_NcezYxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
