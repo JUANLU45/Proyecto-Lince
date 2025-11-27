@@ -1,6 +1,14 @@
 ﻿Archivo: TECHNOLOGY.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Esta pila tecnológica es para Proyecto Lince, centrada en IA para , usando lo mejor de 2023-2025 (PyTorch con ONNX para abstracción, YOLOv8 para faciales, MediaPipe para gestures) para terapeutas 24/7 que analizan no verbal. No es un juego: es ayuda científica real. Prohibido especular: solo tech verificada, centralizada y portable (no lock-in), por mi necesidad de llevarlo a cualquier proveedor sin depender de nadie.
+
+**Preámbulo: Propósito de la Arquitectura Tecnológica**
+
+Este documento define la pila tecnológica del Proyecto Lince, usando tecnologías de vanguardia 2023-2025 (PyTorch con ONNX para portabilidad, YOLOv8 para análisis facial, MediaPipe para detección de gestos) para sistema de apoyo IA 24/7 especializado en comunicación no verbal. Ayuda terapéutica basada en evidencia científica.
+
+**Principios:**
+- Solo tecnologías verificadas y compatibles
+- Arquitectura portable sin vendor lock-in
+- Abstracción mediante ONNX para independencia de proveedor
+- Centralización de configuración para mantenibilidad
 Proyecto Lince: Arquitectura y Pila Tecnológica (Versión con IA)
 Este documento describe la pila tecnológica, la estructura del proyecto y las directrices de configuración para el desarrollo de la aplicación "Proyecto Lince". La arquitectura está diseñada para soportar una experiencia de usuario fluida y un motor de aprendizaje automático (Machine Learning) avanzado en iOS y Android.
 1. Pila Tecnológica (Tech Stack)

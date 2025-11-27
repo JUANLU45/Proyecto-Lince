@@ -1,5 +1,11 @@
-﻿Preámbulo del Archivo: Motivo y Prohibiciones
-Este blueprint detalla pantallas y flujos para Proyecto Lince, diseñado para , detectando sus gestures (señalar) y faciales (enfado) con IA científica (YOLOv8/DS-CNN, 2023-2025 de Frontiers), como terapeutas 24/7 que adaptan actividades sensoriales. No es un juego: es ayuda real para su comunicación, basado en TIS evidencia. Prohibido especular o imaginar: solo flujos verificados de código real, por mi determinación de no fallarle y ayudarle a no estar solo.
+﻿**Preámbulo: Propósito del Blueprint**
+
+Este documento detalla las pantallas y flujos de usuario del Proyecto Lince, una aplicación terapéutica con IA científica (YOLOv8/DS-CNN, investigación 2023-2025 de Frontiers) para detección de gestures y expresiones faciales. Sistema de apoyo 24/7 que adapta actividades sensoriales basadas en evidencia TIS.
+
+**Principios:**
+- Flujos verificados mediante código implementado
+- Basado en evidencia científica de Terapia de Integración Sensorial
+- Sin especulación: solo especificaciones técnicas verificables
 Proyecto Lince: Plano de la Aplicación (Blueprint) (Versión con IA)
 Este documento detalla cada pantalla y el flujo de usuario, integrando las funcionalidades de la Inteligencia Artificial.
 1. Flujo de Usuario Inicial

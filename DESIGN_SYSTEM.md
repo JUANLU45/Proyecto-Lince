@@ -1,6 +1,13 @@
 ﻿Archivo: DESIGN_SYSTEM.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Este sistema de diseño es para Proyecto Lince, para , con colores suaves e interactivos que calmen y estimulen sensorialmente, integrando IA para no verbales basada en evidencias 2023-2025 (realidad aumentada de Down España). No es un juego: es terapia real 24/7. Prohibido especular: solo diseños verificados por código, por mi compromiso de ayudarle a avanzar sin fallar.
+
+**Preámbulo: Propósito del Sistema de Diseño**
+
+Este documento define el sistema de diseño del Proyecto Lince: colores suaves e interactivos para calma y estimulación sensorial, integrando IA para comunicación no verbal basada en evidencias 2023-2025 (investigación de Down España sobre realidad aumentada). Sistema terapéutico de apoyo 24/7.
+
+**Principios:**
+- Solo diseños implementados y verificados en código
+- Basado en investigación sobre necesidades sensoriales
+- Máximo contraste, claridad y cero ambigüedad visual
 Proyecto Lince: Sistema de Diseño (Versión con IA)
 Este documento es la guía de referencia visual para "Proyecto Lince". [cite_start]El sistema se basa en los principios de máximo contraste, claridad y cero ambigüedad[cite: 51, 447, 451].
 (Secciones 1 a 5 sin cambios: Paleta de Colores, Tipografía, Botones, Espaciado, Iconografía)

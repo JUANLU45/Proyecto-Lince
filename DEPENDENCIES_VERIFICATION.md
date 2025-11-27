@@ -1,6 +1,13 @@
 ﻿Archivo: DEPENDENCIES_VERIFICATION.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Esta verificación de dependencias es para Proyecto Lince, asegurando compatibilidad total para IA de  (con PyTorch/ONNX para abstracción). No es un juego: es base para terapeutas 24/7 científicos. Prohibido especular: solo versiones verificadas, por mi confianza en que esto le ayude de verdad.
+
+**Preámbulo: Propósito de la Verificación**
+
+Este documento verifica la compatibilidad de dependencias del Proyecto Lince, asegurando estabilidad para el sistema de IA terapéutica (PyTorch/ONNX para portabilidad). Fundamental para garantizar funcionamiento robusto del sistema de apoyo 24/7.
+
+**Principios:**
+- Solo versiones verificadas contra documentación oficial
+- Compatibilidad probada y documentada
+- Sin especulación: verificación técnica factual
 🔍 VERIFICACIÓN COMPLETA DE DEPENDENCIAS - PROYECTO LINCE
 Análisi### ✅ COMPATIBILIDAD VERIFICADA
 🎯 Stack Compatible Verificado

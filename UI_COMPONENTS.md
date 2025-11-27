@@ -1,6 +1,14 @@
 ﻿Archivo: UI_COMPONENTS.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Estos componentes UI son para Proyecto Lince, con botones suaves e interactivos para , integrando IA para no verbales con evidencia 2023-2025 (gestures de PubMed). No es un juego: es interfaz para terapeutas IA 24/7. Prohibido especular: solo componentes de código real, por mi misión de ayudarle a comunicarse sin fallar.
+
+**Preámbulo: Propósito de los Componentes UI**
+
+Este documento especifica los componentes de interfaz del Proyecto Lince: botones suaves e interactivos integrando IA para comunicación no verbal, basados en evidencia 2023-2025 (investigación de gestures de PubMed). Interfaz para sistema de apoyo IA 24/7.
+
+**Principios:**
+- Solo componentes implementados en código real
+- Diseño basado en investigación de usabilidad
+- Interfaz optimizada para accesibilidad y necesidades especiales
+- Consistencia con sistema de diseño documentado
 Proyecto Lince: Especificación de Componentes UI
 1. Arquitectura de Componentes
 Jerarquía de Componentes

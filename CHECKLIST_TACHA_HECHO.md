@@ -31,7 +31,7 @@ TESTING PRODUCCIÓN
  Optimización performance (tacha cuando app rápida)
  Deploy producción (tacha al final)
 
-No repites – tacha solo cuando anterior hecho y chequeado. Para .
+No repites – tacha solo cuando anterior hecho y chequeado.
 Archivo: STEPS_TO_PRODUCTION.md
 📋 PASOS LÓGICOS A PRODUCCIÓN - PROYECTO LINCE
 Pasos consecutivos, uno tras otro, con mejores prácticas 2025 (modulares, sin repetir – empieza por base). Tacha [x] cuando hecho y chequeado (con prompt #6). No saltes – lógico para no hacer 20 veces.
@@ -57,4 +57,4 @@ Pasos consecutivos, uno tras otro, con mejores prácticas 2025 (modulares, sin r
  Corrige errores finales – Usa prompt #2.
  Deploy producción – 100% listo, backups.
 
-Consecutivo: No hagas 8 si 7 no tachado. Para , pon esfuerzo – no falla.
+Consecutivo: No hagas paso 8 si paso 7 no está tachado. Metodología rigurosa para calidad máxima.

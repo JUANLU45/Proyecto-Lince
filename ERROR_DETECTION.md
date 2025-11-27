@@ -1,6 +1,13 @@
 ﻿Archivo: ERROR_DETECTION.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Esta configuración de errores es para Proyecto Lince, para asegurar cero fallos en IA para . No es un juego: es detección real para terapeutas 24/7. Prohibido especular: solo reglas verificadas, por mi seriedad en no fallarle.
+
+**Preámbulo: Propósito de la Detección de Errores**
+
+Esta configuración establece detección de errores del Proyecto Lince para asegurar cero fallos críticos en el sistema de IA terapéutica. Sistema de apoyo 24/7 que requiere máxima fiabilidad.
+
+**Principios:**
+- Solo reglas de linting verificadas y probadas
+- Detección proactiva de problemas de calidad
+- Estándares profesionales de código para producción
 🔍 CONFIGURACIÓN DE DETECCIÓN DE ERRORES PROYECTO LINCE
 Sistema de Control de Calidad Automatizado
 
