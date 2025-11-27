@@ -1,9 +1,9 @@
 ﻿Archivo: CAREFUL_ZONES.md
 📋 ZONAS DE CUIDADO EN EL PROYECTO - PROYECTO LINCE
-Este archivo lista las zonas clave donde tener más cuidado al hacer el proyecto – para no fallar, basado en docs (REQUIREMENTS para seguridad/rendimiento, PDFs para sensibilidad sensorial en page 1, no especular). Cuida estas para .
+Este archivo lista las zonas clave donde tener máximo cuidado durante el desarrollo, basado en documentación técnica (REQUIREMENTS para seguridad/rendimiento, investigación científica para sensibilidad sensorial, sin especulación).
 1. Privacidad y Seguridad Datos
 
-Cuidado: Datos de  (videos, gestos) siempre local/anónimos, GDPR para menores (RNF-009). No compartir sin consentimiento.
+Cuidado: Datos de usuario (videos, gestos) siempre local/anónimos, GDPR para menores (RNF-009). No compartir sin consentimiento.
 Por qué: PDFs page 1 enfatizan protección en apps terapéuticas.
 Cómo: Usa cifrado (RNF-010), logs auditoría (RNF-ADMIN-002).
 
@@ -11,7 +11,7 @@ Cómo: Usa cifrado (RNF-010), logs auditoría (RNF-ADMIN-002).
 
 Cuidado: Modelos (YOLOv8, MFCC) con precisión 95% validada terapeutas (CA-IA-001). No especular, usa datos veraces.
 Por qué: PDFs page 1 para personalización sensorial sin errores, page 14 para entrenamiento visual/cognitivo.
-Cómo: Entrenamiento automático milimétrico, testea con videos .
+Cómo: Entrenamiento automático milimétrico, testea con videos de validación.
 
 3. Accesibilidad para Down
 
@@ -34,7 +34,7 @@ Cómo: Botones suaves, trials 7 días.
 6. Integración Granja/Cantajuegos
 
 Cuidado: Animales/songs sin sobrecarga, cambiables fácil (upload portal).
-Por qué: Para  le gustan, sensorial divertido.
+Por qué: Estimulación sensorial divertida y personalizable.
 Cómo: Constantes centrales, testea performance.
 
 7. Testing y Producción
