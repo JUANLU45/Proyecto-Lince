@@ -2,6 +2,8 @@
 
 **¿QUÉ ES ESTO?** Esta carpeta contiene guías **SUPER FÁCILES** de qué archivos reales necesitas para reemplazar los placeholders.
 
+_Este proyecto es parte del compromiso continuo con herramientas terapéuticas efectivas, extensión del trabajo iniciado en [VicDown.com](https://vicdown.com/)._
+
 ## 📁 **ESTRUCTURA DE GUÍAS**
 
 ```

@@ -2,11 +2,9 @@
 
 Hola, y gracias de corazón por interesarte en Proyecto Lince.
 
-Este proyecto nace de una motivación profunda y personal, de la necesidad de crear herramientas verdaderamente efectivas y adaptadas para niños con síndrome de Down. Mi compromiso con esta comunidad viene de lejos, como pueden ver en la plataforma [VicDown.com](https://vicdown.com/), un espacio que creé para ofrecer apoyo e información fiable.
+Este proyecto nace de una motivación profunda: crear herramientas verdaderamente efectivas y adaptadas para niños con síndrome de Down. Proyecto Lince busca integrar los avances en IA y la Terapia de Integración Sensorial para ofrecer una ayuda real y personalizada.
 
-Proyecto Lince es el siguiente paso: una aplicación que busca integrar los avances en IA y la Terapia de Integración Sensorial para ofrecer una ayuda real y personalizada.
-
-No soy un gran equipo, solo alguien invirtiendo incontables horas porque creo apasionadamente en el potencial de este enfoque. Por eso, cualquier ayuda experta o entusiasta es increíblemente valiosa.
+Este es un proyecto desarrollado con dedicación y esfuerzo continuo. Por eso, cualquier ayuda experta o entusiasta es increíblemente valiosa.
 
 ## Un Espacio Respetuoso y Colaborativo
 
@@ -40,6 +38,6 @@ Si eres desarrollador/a y quieres ayudar a construir esto:
 
 ## Unas Palabras Finales
 
-La documentación es muy detallada, fruto de un esfuerzo enorme por planificar esto correctamente desde el principio. Cada decisión busca maximizar el impacto positivo. Mi trabajo anterior en [VicDown.com](https://vicdown.com/) es una muestra de mi dedicación a largo plazo.
+La documentación es muy detallada, fruto de un esfuerzo enorme por planificar esto correctamente desde el principio. Cada decisión busca maximizar el impacto positivo.
 
 Gracias de nuevo por tu tiempo y por considerar unirte a este esfuerzo. Creo firmemente que, con la colaboración adecuada, podemos crear algo verdaderamente significativo.
