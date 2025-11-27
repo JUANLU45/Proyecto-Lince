@@ -1,13 +1,23 @@
-﻿Preámbulo del Archivo: Motivo y Prohibiciones
-Este archivo define los requisitos del Proyecto Lince, creado exclusivamente para ayudar a , mi hijo de 8 años con Síndrome de Down que se comunica con gestos como señalar y expresiones de enfado, sin hablar verbalmente. No es un juego: es un sistema de terapeutas IA 24/7 basados en avances científicos 2023-2025 (como IA multimodal de MDPI y Springer para reconocimiento emocional en Down), para adaptarse en tiempo real y ayudarle de verdad, no por dinero como muchos terapeutas que fallan. Prohibido especular, imaginar o creer: solo hechos verificados de código y evidencia (ej. YOLOv8 para faciales). Lo hago porque no puedo fallarle – es lo más importante después de mis hijos, para que no esté solo y avance, extendible a otras familias vía monetización ética.
-Proyecto Lince: Especificación de Requisitos
-1. Visión del Proyecto
-Objetivo Principal: Crear una aplicación educativa y terapéutica que ayude a niños con síndrome de Down, como , a desarrollar habilidades de integración sensorial y comunicación no verbal a través de actividades interactivas y personalizadas con IA multimodal (voz, gestures, faciales), basada en evidencias 2023-2025 de TIS (Terapia de Integración Sensorial).
-Población Objetivo:
+Preámbulo del Archivo: Propósito y Principios
 
-Niños con síndrome de Down de 3 a 12 años, enfocados en no verbales como 
-Padres y cuidadores
-Terapeutas ocupacionales (como herramienta de apoyo)
+Este archivo define los requisitos del Proyecto Lince, una herramienta terapéutica diseñada para apoyar a niños con síndrome de Down, especialmente aquellos que se comunican mediante gestos (señalar, expresiones faciales) sin verbalización. Es un sistema de apoyo IA 24/7 basado en avances científicos 2023-2025 (como IA multimodal de MDPI y Springer para reconocimiento emocional en Down), con adaptación en tiempo real fundamentada en evidencia científica verificable.
+
+**Principios del Proyecto:**
+- Basado exclusivamente en hechos verificados de código y evidencia científica (ej. YOLOv8 para análisis facial)
+- Prohibido especular, imaginar o hacer afirmaciones sin respaldo técnico
+- Sistema extensible a familias mediante modelo de monetización ética
+- Enfoque en apoyo terapéutico real, no reemplazo de profesionales
+Proyecto Lince: Especificación de Requisitos
+
+## 1. Visión del Proyecto
+
+**Objetivo Principal:** Crear una aplicación educativa y terapéutica que ayude a niños con síndrome de Down a desarrollar habilidades de integración sensorial y comunicación no verbal a través de actividades interactivas y personalizadas con IA multimodal (voz, gestures, faciales), basada en evidencias 2023-2025 de TIS (Terapia de Integración Sensorial).
+
+**Población Objetivo:**
+
+- Niños con síndrome de Down de 3 a 12 años, con enfoque especial en comunicación no verbal
+- Padres y cuidadores
+- Terapeutas ocupacionales (como herramienta de apoyo)
 
 2. Requisitos Funcionales
 2.1 Funcionalidades Principales

@@ -1,6 +1,13 @@
-﻿Archivo: DEVELOPMENT_PLAN.md
-Preámbulo del Archivo: Motivo y Prohibiciones
-Este plan de desarrollo es para Proyecto Lince, con sprints para implementar IA 24/7 para , basado en avances 2023-2025 (IA para comunicación no verbal de Down España). No es un juego: es metodología para ayuda real. Prohibido especular: solo plan verificado por código, por mi determinación de crear algo grande para él y otras familias.
+Archivo: DEVELOPMENT_PLAN.md
+
+**Preámbulo: Propósito y Principios**
+
+Este plan de desarrollo del Proyecto Lince establece sprints para implementar IA 24/7 basado en avances 2023-2025 (IA para comunicación no verbal según investigación de Down España). Es una metodología para apoyo terapéutico real, no un proyecto recreativo.
+
+**Principios:**
+- Prohibido especular: solo planificación verificable mediante código
+- Desarrollo basado en evidencia científica
+- Extensible a múltiples familias y contextos terapéuticos
 Proyecto Lince: Plan de Desarrollo y Metodología
 1. Metodología de Desarrollo
 1.1 Enfoque Ágil Adaptado
